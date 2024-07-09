@@ -10119,7 +10119,34 @@ aside .links a.active
 
 .product_info .images .big
 {
+    position: relative;
+
     border: 1px solid #cdcdcd;
+}
+
+
+.product_info .images .exp
+{
+    font-size: 32px;
+    font-weight: 600;
+
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    background: rgba(255,255,255,.88);
 }
 
 
@@ -10418,6 +10445,64 @@ aside .links a.active
 
 
 
+.product_info .buy .not_available
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.product_info .buy .not_available .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    color: #fff;
+    border-radius: 10px;
+    background: #c40606;
+}
+
+
+.product_info .buy .not_available .icon svg
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+
+.product_info .buy .not_available .name
+{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+
+    align-self: center;
+
+    width: calc(100% - 70px);
+
+    color: #c40606;
+}
+
+
+.product_info .buy .not_available .desc
+{
+    width: 100%;
+    margin-top: 12px;
+}
+
+
+
 .product_info .buy .status
 {
     font-size: 20px;
@@ -10506,6 +10591,13 @@ aside .links a.active
 .product_info .buy .buy_btn:hover
 {
     background: #920a0a;
+}
+
+
+
+.product_info .order
+{
+    margin-top: 64px;
 }
 
 
