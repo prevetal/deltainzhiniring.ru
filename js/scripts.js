@@ -680,6 +680,45 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$('.filter form').get(0).reset()
 	})
+
+
+	// Product page
+	if ($('.product_info .images').length) {
+		const productThumbs = new Swiper('.product_info .thumbs .swiper', {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 10,
+			lazy: true,
+			slidesPerView: 4,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		})
+
+		new Swiper('.product_info .big .swiper', {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 20,
+			slidesPerView: 1,
+			lazy: true,
+			thumbs: {
+				swiper: productThumbs
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			}
+		})
+	}
 })
 
 
