@@ -14,7 +14,7 @@
     height: 42px;
     margin: auto 0;
 
-    transition: color .2s linear;
+    transition: .2s linear;
     transform: none;
 
     color: var(--text_color);
@@ -51,6 +51,13 @@
 .swiper-button-prev .icon
 {
     transform: rotate(180deg);
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover
+{
+    color: #236d74;
 }
 
 

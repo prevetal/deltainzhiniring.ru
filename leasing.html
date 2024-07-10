@@ -51,10 +51,10 @@
 						<div class="top">
 							<div class="cont row">
 								<div class="location">
-									<div class="current">
+									<button class="current modal_btn" data-modal="city_modal">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
 										<span>Санкт-Петербург</span>
-									</div>
+									</button>
 
 									<div class="dropdown">
 										<button class="close_btn">
@@ -66,7 +66,7 @@
 										<div class="btns">
 											<button class="btn yes_btn">Да верно</button>
 
-											<button class="btn">Выбрать другой</button>
+											<button class="btn modal_btn" data-modal="city_modal">Выбрать другой</button>
 										</div>
 									</div>
 								</div>
@@ -222,11 +222,506 @@
 								<div class="catalog modal_cont">
 									<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+
 										<span>Каталог товаров</span>
 									</button>
 
 									<div class="mini_modal" id="catalog_modal">
+										<div class="list">
+											<div><a href="/" class="active">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Складская техника</span>
+											</a></div>
 
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Грузоподъёмное оборудование</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Станки</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Строительное оборудование</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Окрасочное оборудование</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Генераторы и электростанции</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Компрессоры воздушные</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Сварочное оборудование</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Пневматический инструмент</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Профессиональное оборудование для общепита</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Упаковочное и фасовочное оборудование</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Материалы для гидроизоляции деформационных швов</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Оборудование для обустройства дорог и парковок</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Гидравлическое оборудование и инструменты</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Оборудование для автосервиса</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Оборудование для клининга</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Промышленная вентиляция и отопление</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Ультразвуковое оборудование</span>
+											</a></div>
+
+											<div><a href="/">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												<span>Насосное оборудование</span>
+											</a></div>
+										</div>
+
+
+										<div class="sub sub1" style="display: block;">
+											<div class="columns">
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Штабелеры</div>
+													</a>
+
+													<div class="sub_links">
+														<div><a href="/">Штабелеры ручные гидравлические</a></div>
+
+														<div><a href="/">Электроштабелеры</a></div>
+
+														<div><a href="/">Штабелеры электрические самоходные</a></div>
+
+														<div><a href="/">Штабелеры-бочкокантователи (тележки для перевозки бочек)</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Ричтраки</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Тележки складские грузовые</div>
+													</a>
+
+													<div class="sub_links">
+														<div><a href="/">Тележки ручные</a></div>
+
+														<div><a href="/">Гидравлические тележки (рохли)</a></div>
+
+														<div><a href="/">Гидравлические тележки (рохли) с весами</a></div>
+
+														<div><a href="/">Самоходные электрические тележки (Электророхли)</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Подъёмные столы</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Ножничные подъемники для склада</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Подъемники мачтовые телескопические</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Автомобильные весы</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Крановые весы</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Весы напольные промышленные</div>
+													</a>
+
+													<div class="sub_links">
+														<div><a href="/">Весы платформенные</a></div>
+
+														<div><a href="/">Паллетные весы</a></div>
+
+														<div><a href="/">Стержневые весы (балочные)</a></div>
+
+														<div><a href="/">Весы для взвешивания скота (животных)</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Грузовые роликовые платформы</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Погрузчики вилочные</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Электротягачи</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Сборщики (подборщики) заказов</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Тензодатчики</div>
+													</a>
+
+													<div class="sub_links">
+														<div><a href="/">Одноточечный тип</a></div>
+
+														<div><a href="/">Балочный тип</a></div>
+
+														<div><a href="/">S-образный тип</a></div>
+
+														<div><a href="/">Цилиндрический тип</a></div>
+
+														<div><a href="/">Датчики на растяжение</a></div>
+
+														<div><a href="/">Специальные датчики</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Весовое оборудование</div>
+													</a>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="sub sub2">
+											<div class="columns">
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Штабелеры</div>
+													</a>
+
+													<div class="sub_links">
+														<div><a href="/">Штабелеры ручные гидравлические</a></div>
+
+														<div><a href="/">Электроштабелеры</a></div>
+
+														<div><a href="/">Штабелеры электрические самоходные</a></div>
+
+														<div><a href="/">Штабелеры-бочкокантователи (тележки для перевозки бочек)</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Ричтраки</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Тележки складские грузовые</div>
+													</a>
+
+													<div class="sub_links">
+														<div><a href="/">Тележки ручные</a></div>
+
+														<div><a href="/">Гидравлические тележки (рохли)</a></div>
+
+														<div><a href="/">Гидравлические тележки (рохли) с весами</a></div>
+
+														<div><a href="/">Самоходные электрические тележки (Электророхли)</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Подъёмные столы</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Ножничные подъемники для склада</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Подъемники мачтовые телескопические</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Автомобильные весы</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Крановые весы</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Весы напольные промышленные</div>
+													</a>
+
+													<div class="sub_links">
+														<div><a href="/">Весы платформенные</a></div>
+
+														<div><a href="/">Паллетные весы</a></div>
+
+														<div><a href="/">Стержневые весы (балочные)</a></div>
+
+														<div><a href="/">Весы для взвешивания скота (животных)</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Грузовые роликовые платформы</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Погрузчики вилочные</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Электротягачи</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Сборщики (подборщики) заказов</div>
+													</a>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Тензодатчики</div>
+													</a>
+
+													<div class="sub_links">
+														<div><a href="/">Одноточечный тип</a></div>
+
+														<div><a href="/">Балочный тип</a></div>
+
+														<div><a href="/">S-образный тип</a></div>
+
+														<div><a href="/">Цилиндрический тип</a></div>
+
+														<div><a href="/">Датчики на растяжение</a></div>
+
+														<div><a href="/">Специальные датчики</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="main">
+														<div class="thumb">
+															<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+														</div>
+
+														<div class="name">Весовое оборудование</div>
+													</a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 
@@ -654,6 +1149,12 @@
 									<div>Я согласен на обработку <a href="/" target="_blank">персональных данных</a></div>
 								</label>
 							</div>
+
+							<div class="success">
+								<img src="images/ic_success.svg" alt="" class="icon">
+
+								<div>Ваш запрос принят!<br> В ближайшее время мы свяжемся с Вами</div>
+							</div>
 						</form>
 					</div>
 				</section>
@@ -667,7 +1168,7 @@
 							<div class="label">Ваш город:</div>
 
 							<div class="val">
-								<button class="btn">Санкт-Петербург</button>
+								<button class="btn modal_btn" data-modal="city_modal">Санкт-Петербург</button>
 							</div>
 						</div>
 
@@ -795,6 +1296,143 @@
 				</div>
 			</footer>
 		</div>
+
+
+		<section class="modal" id="city_modal">
+			<div class="modal_title">Работаем по всей России<br> Выберите свой город</div>
+
+			<form action="" class="search">
+				<input type="text" name="" value="" class="input" placeholder="Введите название города">
+
+				<button type="submit" class="submit_btn">
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+				</button>
+			</form>
+
+			<div class="cloud">
+				<div><a href="/">Барнаул</a></div>
+
+				<div><a href="/">Владивосток</a></div>
+
+				<div><a href="/"><b>Волгоград</b></a></div>
+
+				<div><a href="/"><b>Воронеж</b></a></div>
+
+				<div><a href="/"><b>Екатеринбург</b></a></div>
+
+				<div><a href="/">Ижевск</a></div>
+
+				<div><a href="/">Иркутск</a></div>
+
+				<div><a href="/"><b>Казань</b></a></div>
+
+				<div><a href="/">Калининград</a></div>
+
+				<div><a href="/">Калуга</a></div>
+
+				<div><a href="/">Кемерово</a></div>
+
+				<div><a href="/">Киров</a></div>
+
+				<div><a href="/"><b>Краснодар</b></a></div>
+
+				<div><a href="/"><b>Красноярск</b></a></div>
+
+				<div><a href="/">Липецк</a></div>
+
+				<div><a href="/"><b>Москва</b></a></div>
+
+				<div><a href="/"><b>Нижний Новгород</b></a></div>
+
+				<div><a href="/"><b>Новосибирск</b></a></div>
+
+				<div><a href="/"><b>Омск</b></a></div>
+
+				<div><a href="/">Орёл</a></div>
+
+				<div><a href="/">Пенза</a></div>
+
+				<div><a href="/"><b>Пермь</b></a></div>
+
+				<div><a href="/"><b>Ростов-на-Дону</b></a></div>
+
+				<div><a href="/">Рязань</a></div>
+
+				<div><a href="/"><b>Самара</b></a></div>
+
+				<div><a href="/"><b>Санкт-Петербург</b></a></div>
+
+				<div><a href="/">Саратов</a></div>
+
+				<div><a href="/">Симферополь</a></div>
+
+				<div><a href="/">Ставрополь</a></div>
+
+				<div><a href="/">Тула</a></div>
+
+				<div><a href="/">Тюмень</a></div>
+
+				<div><a href="/"><b>Уфа</b></a></div>
+
+				<div><a href="/">Хабаровск</a></div>
+
+				<div><a href="/">Чебоксары</a></div>
+
+				<div><a href="/"><b>Челябинск</b></a></div>
+
+				<div><a href="/">Ярославль</a></div>
+			</div>
+
+			<img src="images/bg_city_modal.png" alt="" class="bg" loading="lazy">
+		</section>
+
+
+		<section class="modal add_success" id="cart_add_success_modal">
+			<div class="title">Добавлено в корзину</div>
+
+			<div class="product">
+				<div class="thumb">
+					<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+				</div>
+
+				<div class="name">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой)</div>
+			</div>
+		</section>
+
+
+		<section class="modal add_success" id="favorite_add_success_modal">
+			<div class="title">Добавлено в избранное</div>
+
+			<div class="product">
+				<div class="thumb">
+					<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+				</div>
+
+				<div class="name">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой)</div>
+			</div>
+		</section>
+
+
+		<section class="modal add_success" id="compare_add_success_modal">
+			<div class="title">Добавлено в сравнение</div>
+
+			<div class="product">
+				<div class="thumb">
+					<img src="images/tmp/popular_reviews_product_thumb.jpg" alt="" loading="lazy">
+				</div>
+
+				<div class="name">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой)</div>
+			</div>
+		</section>
+
+
+		<section class="cookie">
+			<div class="cont row">
+				<div>Мы используем файлы cookie. Они помогают улучшить ваше взаимодействие с сайтом <a href="/">подробнее</a></div>
+
+				<button class="btn">Принять</button>
+			</div>
+		</section>
 
 
 		<!-- Connecting javascript files -->
