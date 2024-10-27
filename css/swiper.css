@@ -22,6 +22,7 @@
     background: none;
 }
 
+
 .swiper-button-prev
 {
     left: -141px;
@@ -31,6 +32,7 @@
 {
     right: -141px;
 }
+
 
 .swiper-button-next:after,
 .swiper-button-prev:after
@@ -89,6 +91,8 @@
     height: 5px;
 
     pointer-events: none;
+
+    gap: 19px;
 }
 
 
@@ -97,19 +101,15 @@
     display: block;
 
     width: 100%;
+    max-width: 34px;
     height: 5px;
 
     transition: .2s linear;
     pointer-events: auto;
 
     opacity: 1;
-    border-radius: 0;
-    background: #dcdcdc;
-}
-
-.swiper-pagination-bullet + .swiper-pagination-bullet
-{
-    margin-left: 15px !important;
+    border-radius: 3px;
+    background: #c7c7c7;
 }
 
 

@@ -4,6 +4,26 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function () {
+	// Header menu
+	let menuSlider = document.querySelector('header .menu .swiper')
+
+	if (menuSlider) {
+		new Swiper('header .menu .swiper', {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 40,
+			slidesPerView: 'auto',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		})
+	}
+
+
 	// Main slider
 	let mainSlider = document.querySelector('.main_slider .swiper')
 
@@ -68,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		el.classList.add('products_s' + i)
 
 		let options = {
-			loop: false,
+			loop: true,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
@@ -103,13 +123,13 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 			},
 			on: {
-				init: swiper => setHeight(swiper.el.querySelectorAll('.product')),
+				init: swiper => setHeight(swiper.el.querySelectorAll('.product_wrap')),
 				resize: swiper => {
-					let products = swiper.el.querySelectorAll('.product')
+					let items = swiper.el.querySelectorAll('.product_wrap')
 
-					products.forEach(el => el.style.height = 'auto')
+					items.forEach(el => el.style.height = 'auto')
 
-					setHeight(products)
+					setHeight(items)
 				}
 			}
 		}
@@ -137,8 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			speed: 6000,
 			autoplay: {
 				delay: 1,
-				disableOnInteraction: false,
-				reverseDirection: el.classList.contains('reverse') ? true : false
+				disableOnInteraction: false
 			},
 			allowTouchMove: false,
 			disableOnInteraction: true
@@ -156,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		el.classList.add('certs_s' + i)
 
 		let options = {
-			loop: false,
+			loop: true,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
@@ -210,6 +229,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
 			lazy: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
 			pagination: {
 				el: '.swiper-pagination',
 				type: 'bullets',
@@ -365,14 +388,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// Menu
-	$('.responsive_menu').responsiveMenu({
-		containerClass: 'menu',
-		itemClass: 'item',
-		linkText: '<svg class="icon"><use xlink:href="images/sprite.svg#ic_more"></use></svg>'
-	})
-
-
 	// Mob. menu
 	$('.mob_header .mob_menu_btn').click((e) => {
 		e.preventDefault()
@@ -396,14 +411,27 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Phone input mask
 	const phoneInputs = document.querySelectorAll('input[type=tel]')
 
+	console.log(phoneInputs)
+
 	if (phoneInputs) {
 		phoneInputs.forEach(el => {
 			IMask(el, {
 				mask: '+{7} ( 000 ) 000 - 00 - 00',
-				lazy: true
+				lazy: false
 			})
 		})
 	}
+
+
+	$('.form .input, .form textarea').keyup(function() {
+		let _self = $(this)
+
+		setTimeout(() => {
+			_self.val().length
+				?_self.addClass('active')
+				: _self.removeClass('active')
+		})
+	})
 
 
 	// Focus when clicking on the field name
@@ -416,46 +444,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 				el.closest('.line').querySelector('.input, textarea').focus()
 			})
-		})
-	}
-
-
-	// Select file
-	const fileInputs = document.querySelectorAll('form input[type=file]')
-
-	if (fileInputs) {
-		fileInputs.forEach(el => {
-			el.addEventListener('change', () => el.closest('.file').querySelector('label .path').innerText = el.value)
-		})
-	}
-
-
-	if (is_touch_device()) {
-		const subMenus = document.querySelectorAll('header .menu .sub_menu')
-
-		// Submenu on the touch screen
-		$('header .menu_item > a.sub_link').addClass('touch_link')
-
-		$('header .menu_item > a.sub_link').click(function (e) {
-			const dropdown = $(this).next()
-
-			if (dropdown.css('visibility') === 'hidden') {
-				e.preventDefault()
-
-				subMenus.forEach(el => el.classList.remove('show'))
-				dropdown.addClass('show')
-
-				BODY.style = 'cursor: pointer;'
-			}
-		})
-
-		// Close the submenu when clicking outside it
-		document.addEventListener('click', e => {
-			if ($(e.target).closest('.menu').length === 0) {
-				subMenus.forEach(el => el.classList.remove('show'))
-
-				BODY.style = 'cursor: default;'
-			}
 		})
 	}
 
@@ -516,7 +504,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Product to favorite
-	$('.product .favorite_btn').click(function(e) {
+	$('.product .favorite_btn, .product_info .favorite_btn, .fixed_product_info .favorite_btn').click(function(e) {
 		e.preventDefault()
 
 		$(this).toggleClass('active')
@@ -530,7 +518,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Product to compare
-	$('.product .compare_btn').click(function(e) {
+	$('.product .compare_btn, .product_info .compare_btn, .fixed_product_info .compare_btn').click(function(e) {
 		e.preventDefault()
 
 		$(this).toggleClass('active')
@@ -664,7 +652,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	$termRange = $('.credit_order #term_range').ionRangeSlider({
-		values: ['12 месяцев', '18 месяцев', '24 месяца', '36 месяцев', '48 месяцев', '60 месяцев'],
+		values: ['12 мес.', '18 мес.', '24 мес.', '36 мес.', '48 мес.', '60 мес.'],
 		step: 1,
 		onChange: data => {
 			$('.credit_order .term_range input').val(data.from_value)
@@ -750,7 +738,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			slideVisibleClass: 'visible',
 			spaceBetween: 10,
 			lazy: true,
-			slidesPerView: 4,
+			slidesPerView: 5,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
@@ -780,11 +768,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Quike buy
-	$('.quike_buy .input').focus(function() {
-		$('.quike_buy .hide').removeClass('hide')
+	$('#quike_buy_modal .form .input').focus(function() {
+		$('#quike_buy_modal .form .hide').removeClass('hide')
 	})
 
-	$('.quike_buy').submit(function(e) {
+	$('#quike_buy_modal .form').submit(function(e) {
 		e.preventDefault()
 
 		let parent = $(this)
@@ -838,6 +826,32 @@ document.addEventListener('DOMContentLoaded', function () {
 		parent.find('.form').hide()
 		parent.find('.success').fadeIn(300)
 	})
+
+
+	// Aligning elements in the grid
+	document.querySelectorAll('.catalog .row').forEach(el => {
+		let styles = getComputedStyle(el)
+
+		catalogHeight(el, parseInt(styles.getPropertyValue('--count')))
+	})
+
+	document.querySelectorAll('.products .row').forEach(el => {
+		let styles = getComputedStyle(el)
+
+		productsHeight(el, parseInt(styles.getPropertyValue('--count')))
+	})
+
+
+	// Copy btn
+	const clipboard = new ClipboardJS('.copy_btn')
+
+	clipboard.on('success', e => {
+		$(e.trigger).addClass('copied')
+
+		setTimeout(() => $(e.trigger).removeClass('copied'), 2000)
+
+		e.clearSelection()
+	})
 })
 
 
@@ -857,6 +871,10 @@ window.addEventListener('load', function () {
 
 	// Set header height
 	document.documentElement.style.setProperty('--header_height', headerHeight + 'px')
+
+
+	// Contacts block
+	setHeight(document.querySelectorAll('.contacts_block .label'))
 })
 
 
@@ -910,6 +928,28 @@ window.addEventListener('resize', function () {
 		}, 100)
 
 
+		// Aligning elements in the grid
+		document.querySelectorAll('.catalog .row').forEach(el => {
+			let styles = getComputedStyle(el)
+
+			catalogHeight(el, parseInt(styles.getPropertyValue('--count')))
+		})
+
+		document.querySelectorAll('.products .row').forEach(el => {
+			let styles = getComputedStyle(el)
+
+			productsHeight(el, parseInt(styles.getPropertyValue('--count')))
+		})
+
+
+		// Contacts block
+		let contactsLabels = document.querySelectorAll('.contacts_block .label')
+
+		contactsLabels.forEach(label => label.style.height = 'auto')
+
+		setHeight(contactsLabels)
+
+
 		// Mob. version
 		if (!fakeResize) {
 			fakeResize = true
@@ -928,3 +968,50 @@ window.addEventListener('resize', function () {
 		}
 	}
 })
+
+
+
+// Alignment of categories
+function catalogHeight(context, step) {
+	let start = 0,
+		finish = step,
+		items = [...context.querySelectorAll('.category')],
+		itemsName = context.querySelectorAll('.name'),
+		itemsSub = context.querySelectorAll('.sub'),
+		i = 0
+
+	itemsName.forEach(el => el.style.height = 'auto')
+	itemsSub.forEach(el => el.style.height = 'auto')
+
+	items.forEach(el => {
+		items.slice(start, finish).forEach(el => el.setAttribute('nodeList', i))
+
+		setHeight(context.querySelectorAll('[nodeList="' + i + '"] .name'))
+		setHeight(context.querySelectorAll('[nodeList="' + i + '"] .sub'))
+
+		start = start + step
+		finish = finish + step
+		i++
+	})
+}
+
+
+// Alignment of products
+function productsHeight(context, step) {
+	let start = 0,
+		finish = step,
+		items = [...context.querySelectorAll('.product_wrap')],
+		i = 0
+
+	items.forEach(el => el.style.height = 'auto')
+
+	items.forEach(el => {
+		items.slice(start, finish).forEach(el => el.setAttribute('nodeList', i))
+
+		setHeight(context.querySelectorAll('[nodeList="' + i + '"]'))
+
+		start = start + step
+		finish = finish + step
+		i++
+	})
+}

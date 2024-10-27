@@ -9,9 +9,6 @@ Build date: 2019-12-19 16:51:02
 
     display: block;
 
-    margin-top: 27px;
-    margin-bottom: 28px;
-
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -216,7 +213,7 @@ Build date: 2019-12-19 16:51:02
 {
     top: 0;
 
-    height: 2px;
+    height: 3px;
 
     border-radius: 0;
     background-color: #1e7279;
@@ -225,7 +222,7 @@ Build date: 2019-12-19 16:51:02
 {
     top: 0;
 
-    height: 2px;
+    height: 3px;
 
     background-color: #1e7279;
 }
@@ -241,28 +238,18 @@ Build date: 2019-12-19 16:51:02
 
 .irs--flat .irs-handle
 {
-    top: -7px;
+    top: -11px;
 
-    width: 12px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
 
     cursor: pointer;
 
-    border: none;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-left: 12px solid #1e7279;
-    border-radius: 0;
-    background: none;
+    border: 3px solid #16646b;
+    border-radius: 50%;
+    background: #fff;
 }
 
-.irs--flat .irs-handle.to
-{
-    border: none;
-    border-top: 8px solid transparent;
-    border-right: 12px solid #1e7279;
-    border-bottom: 8px solid transparent;
-}
 
 .irs--flat .irs-handle:before
 {

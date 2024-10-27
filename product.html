@@ -44,7 +44,7 @@
 	<body>
 		<div class="wrap">
 			<div class="main">
-				<header class="no_fixed">
+				<header>
 					<button class="mob_close_btn"></button>
 
 					<div class="scroll">
@@ -168,63 +168,17 @@
 
 						<div class="data">
 							<div class="cont row">
-								<div class="logo">
+								<a href="/" class="logo">
 									<img src="images/logo.svg" alt="">
 									<img src="images/logo_small.svg" alt="">
-								</div>
+								</a>
 
-								<form action="" class="search">
-									<input type="text" name="" value="" class="input" placeholder="Используйте название товара, категорию, артикул или параметры оборудования">
-
-									<button type="submit" class="submit_btn">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
-									</button>
-								</form>
-
-								<div class="btns row">
-									<div class="compare">
-										<a href="/">
-											<div class="icon">
-												<svg><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
-											</div>
-
-											<div>Сравнить</div>
-										</a>
-									</div>
-
-									<div class="favorite">
-										<a href="/">
-											<div class="icon">
-												<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
-											</div>
-
-											<div>Избранное</div>
-										</a>
-									</div>
-
-									<div class="cart">
-										<a href="/">
-											<div class="icon">
-												<div class="count">99</div>
-												<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-											</div>
-
-											<div>Корзина</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="bottom">
-							<div class="cont row">
 								<div class="catalog modal_cont">
 									<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
 
-										<span>Каталог товаров</span>
+										<span>Каталог</span>
 									</button>
 
 									<div class="mini_modal" id="catalog_modal">
@@ -725,71 +679,183 @@
 									</div>
 								</div>
 
+								<form action="" class="search">
+									<input type="text" name="" value="" class="input" placeholder="Найдите оборудование для вашего бизнеса...">
+
+									<button type="submit" class="submit_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+								</form>
+
+								<div class="btns row">
+									<div class="compare">
+										<a href="/">
+											<div class="icon">
+												<svg><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+											</div>
+
+											<div>Сравнить</div>
+										</a>
+									</div>
+
+									<div class="favorite">
+										<a href="/">
+											<div class="icon">
+												<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											</div>
+
+											<div>Избранное</div>
+										</a>
+									</div>
+
+									<div class="cart">
+										<a href="/">
+											<div class="icon">
+												<div class="count">99</div>
+												<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+											</div>
+
+											<div>Корзина</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont">
 								<nav class="menu">
-									<div class="responsive_menu row">
-										<div class="item">
-											<a href="/">Метчики</a>
+									<div class="swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Метчики</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Плашки</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Развертки</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Резцы</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Оснастка</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Алмазный</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Измерительный</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Пластины</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Алмазный</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Измерительный</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Метчики</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Плашки</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Развертки</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Резцы</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Оснастка</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Алмазный</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Измерительный</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Пластины</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Алмазный</a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="item">
+													<a href="/">Измерительный</a>
+												</div>
+											</div>
 										</div>
 
-										<div class="item">
-											<a href="/">Плашки</a>
-										</div>
+										<button class="swiper-button-prev">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+										</button>
 
-										<div class="item">
-											<a href="/">Развертки</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Резцы</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Оснастка</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Алмазный</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Измерительный</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Пластины</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Метчики</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Плашки</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Развертки</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Резцы</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Оснастка</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Алмазный</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Измерительный</a>
-										</div>
-
-										<div class="item">
-											<a href="/">Пластины</a>
-										</div>
+										<button class="swiper-button-next">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+										</button>
 									</div>
 								</nav>
 							</div>
@@ -989,71 +1055,85 @@
 									<div class="items">
 										<div>
 											<div class="label">Производитель:</div>
+											<div class="dots"></div>
 											<div class="val">ТСС</div>
 										</div>
 
 										<div>
 											<div class="label">Страна-производитель:</div>
+											<div class="dots"></div>
 											<div class="val">Китай</div>
 										</div>
 
 										<div>
 											<div class="label">Мощность номинальная:</div>
+											<div class="dots"></div>
 											<div class="val">5 кВт</div>
 										</div>
 
 										<div>
 											<div class="label">Мощность максимальная:</div>
+											<div class="dots"></div>
 											<div class="val">5.5 кВт</div>
 										</div>
 
 										<div>
 											<div class="label">Напряжение: 220 В</div>
+											<div class="dots"></div>
 											<div class="val">220 В</div>
 										</div>
 
 										<div>
 											<div class="label">Объем топливного бака:</div>
+											<div class="dots"></div>
 											<div class="val">15 л</div>
 										</div>
 
 										<div>
 											<div class="label">Исполнение:</div>
+											<div class="dots"></div>
 											<div class="val">Открытое</div>
 										</div>
 
 										<div>
 											<div class="label">Стартер:</div>
+											<div class="dots"></div>
 											<div class="val">Ручной/Электрический</div>
 										</div>
 
 										<div>
 											<div class="label">Производитель двигателя:</div>
+											<div class="dots"></div>
 											<div class="val">TSS Diesel</div>
 										</div>
 
 										<div>
 											<div class="label">Тип двигателя:</div>
+											<div class="dots"></div>
 											<div class="val">4-х тактный</div>
 										</div>
 
 										<div>
 											<div class="label">Расход топлива:</div>
+											<div class="dots"></div>
 											<div class="val">2.6 л/ч</div>
 										</div>
 
 										<div>
 											<div class="label">Выход 12V:</div>
+											<div class="dots"></div>
 											<div class="val">Есть</div>
 										</div>
 
 										<div>
 											<div class="label">Аккумулятор в комплекте:</div>
+											<div class="dots"></div>
 											<div class="val">Есть</div>
 										</div>
 
 										<div>
 											<div class="label">Вес:</div>
+											<div class="dots"></div>
 											<div class="val">114 кг</div>
 										</div>
 									</div>
@@ -1135,7 +1215,7 @@
 
 											<div class="dotted"></div>
 
-											<div class="val">Китай <img src="images/tmp/brand_flag.svg" alt=""></div>
+											<div class="val">Китай</div>
 										</div>
 
 										<div>
@@ -1390,6 +1470,25 @@
 							</section>
 
 
+							<section class="files">
+								<div class="title">Файлы для скачивания</div>
+
+								<div class="items">
+									<div><a href="/" download class="file">
+										<img src="images/tmp/ic_pdf.png" alt="" loading="lazy" class="pdf">
+
+										<div>Скачать инструкцию для "SMART TV приставка H96 MAX X3 S905X3 4+32 GB” (2,1 Мб)</div>
+									</a></div>
+
+									<div><a href="/" download class="file">
+										<img src="images/tmp/ic_word.png" alt="" loading="lazy" class="word">
+
+										<div>Скачать инструкцию для "SMART TV приставка H96 MAX X3 S905X3 4+32 GB” (2,1 Мб)</div>
+									</a></div>
+								</div>
+							</section>
+
+
 							<section class="reviews">
 								<div class="block_head">
 									<div class="title">
@@ -1415,7 +1514,7 @@
 
 											<div class="line">
 												<div class="field">
-													<input type="text" name="" value="" class="input" placeholder="Введите свое имя">
+													<input type="email" name="" value="" class="input" placeholder="Введите свой email">
 												</div>
 											</div>
 
@@ -1535,63 +1634,108 @@
 
 						<aside>
 							<div class="buy">
-								<div class="status green">Товар в наличии</div>
+								<div class="status">
+									<b class="green">В наличии:</b>
+									<span class="count">54 шт</span>
+								</div>
 
 								<div class="price">
-									1 419 557 <span class="currency">Руб</span>
+									<b>1 419 557</b> <span class="currency">Руб</span>
+									<small>Цена с учетом НДС 20%</small>
 								</div>
 
-								<button class="buy_btn">
-									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-									<span>В корзину</span>
-								</button>
+								<button class="buy_btn">В корзину</button>
 
-								<form action="" class="form quike_buy">
-									<div class="fields">
-										<div class="line">
-											<div class="field">
-												<input type="tel" name="" value="" class="input" placeholder="+7 ( ___ ) ___ - __ - __ ">
-											</div>
-										</div>
+								<button class="quike_buy_btn modal_btn" data-modal="quike_order_modal">Заказать в один клик</button>
 
-										<div class="line hide">
-											<div class="field">
-												<input type="text" name="" value="" class="input" placeholder="Введите ваше имя">
-											</div>
-										</div>
+								<div class="payment">
+									<div class="title">
+										<span>Оплата</span>
+
+										<a href="/" class="link">Подробнее</a>
 									</div>
 
-									<div class="submit">
-										<button type="submit" class="submit_btn">Заказать в один клик</button>
-									</div>
+									<div class="row">
+										<div class="item">
+											<img src="images/tmp/payment_method_logo1.png" alt="" loading="lazy">
+										</div>
 
-									<div class="success">Спасибо за заказ!<br> Менеджер свяжится с вами чтобы уточнить информацию</div>
-								</form>
+										<div class="item">
+											<img src="images/tmp/payment_method_logo2.png" alt="" loading="lazy">
+										</div>
+
+										<div class="item">
+											<img src="images/tmp/payment_method_logo3.png" alt="" loading="lazy">
+										</div>
+
+										<div class="item">
+											<img src="images/tmp/payment_method_logo4.png" alt="" loading="lazy">
+										</div>
+
+										<div class="item">
+											<img src="images/tmp/payment_method_logo5.png" alt="" loading="lazy">
+										</div>
+
+										<div class="item">
+											<img src="images/tmp/payment_method_logo6.png" alt="" loading="lazy">
+										</div>
+									</div>
+								</div>
 
 								<div class="delivery">
-									<div>
-										<div class="icon">
-											<img src="images/ic_product_delivery1.svg" alt="" loading="lazy">
-										</div>
-										<span>Самовывоз: Сегодня</span>
+									<div class="title">
+										<span>Доставка</span>
+
+										<a href="/" class="link">Подробнее</a>
 									</div>
 
-									<div>
-										<div class="icon">
-											<img src="images/ic_product_delivery2.svg" alt="" loading="lazy">
+									<div class="region">
+										<div class="name">На складе в Челябинске</div>
+
+										<div class="items">
+											<div>
+												<div class="label">Самовывоз</div>
+												<div class="val">бесплатно</div>
+											</div>
+
+											<div>
+												<div class="label">Доставки до ТК</div>
+												<div class="val">бесплатно</div>
+											</div>
 										</div>
-										<span>Доставка: от 1 дня</span>
 									</div>
+
+									<div class="region">
+										<div class="name">На складе в других городах</div>
+
+										<div class="items">
+											<div>
+												<div class="label">Екатеринбург</div>
+												<div class="val">в наличии</div>
+											</div>
+
+											<div>
+												<div class="label">Москва</div>
+												<div class="val">в наличии</div>
+											</div>
+										</div>
+									</div>
+
+									<button class="calc_btn">Рассчитать доставку<br> в ваш город</button>
 								</div>
 
-								<div class="cities">
-									<div class="title">Наличие на складах</div>
+								<div class="warranty_returns">
+									<div class="title">
+										<span>Гарантия и возврат</span>
+
+										<a href="/" class="link">Подробнее</a>
+									</div>
 
 									<div class="items">
-										<div>Ростов-на-Дону</div>
-										<div>Санкт-Петербург</div>
-										<div>Нижний новгород</div>
-										<div>Вологда</div>
+										<div>
+											<div class="label">Гарантия</div>
+											<div class="val">12 месяцев</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1607,32 +1751,6 @@
 								<div class="title">Динамика цены</div>
 
 								<img src="images/tmp/product_chart.jpg" alt="" loading="lazy">
-							</div>
-
-							<div class="files">
-								<div class="title">Файлы для скачивания</div>
-
-								<div class="items">
-									<div><a href="/" download class="file">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_download"></use></svg>
-
-										<div>
-											<div class="name">Название файла</div>
-
-											<div class="desc">Описание файла</div>
-										</div>
-									</a></div>
-
-									<div><a href="/" download class="file">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_download"></use></svg>
-
-										<div>
-											<div class="name">Название файла</div>
-
-											<div class="desc">Описание файла</div>
-										</div>
-									</a></div>
-								</div>
 							</div>
 
 							<div class="articles">
@@ -1699,840 +1817,848 @@
 						<div class="swiper main">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<div class="product">
-										<div class="articul">90768</div>
+									<div class="product_wrap">
+										<div class="product">
+											<div class="articul">90768</div>
 
-										<button class="compare_btn">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
-											<span>Сравнить товар</span>
-										</button>
+											<button class="favorite_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+											</button>
 
-										<div class="images">
-											<div class="swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+											<button class="compare_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+											</button>
+
+											<div class="images">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-												</div>
-
-												<div class="swiper-pagination"></div>
-											</div>
-										</div>
-
-										<div class="info">
-											<div class="name">
-												<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
-											</div>
-
-											<div class="features">
-												<div>
-													<div class="label">Грузоподъемность:</div>
-													<div class="val">400 кг</div>
-												</div>
-
-												<div>
-													<div class="label">Мощность двигателя:</div>
-													<div class="val">1.1 м</div>
-												</div>
-
-												<div>
-													<div class="label">Длина вил:</div>
-													<div class="val">650 мм</div>
+													<div class="swiper-pagination"></div>
 												</div>
 											</div>
 
-											<div class="status green">Товар в наличии</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-											</div>
-
-											<div class="price">
-												1 419 557 <span class="currency">Руб</span>
-											</div>
-
-											<div class="btns">
-												<button class="buy_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Купить</span>
-												</button>
-
-												<div class="amount">
-													<button type="button" class="btn minus"></button>
-
-													<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
-
-													<button type="button" class="btn plus"></button>
+											<div class="info">
+												<div class="name">
+													<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
 												</div>
 
-												<button class="favorite_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div class="product">
-										<div class="articul">90768</div>
-
-										<button class="compare_btn">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
-											<span>Сравнить товар</span>
-										</button>
-
-										<div class="images">
-											<div class="swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+												<div class="features">
+													<div>
+														<div class="label">Грузоподъемность:</div>
+														<div class="val">400 кг</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+													<div>
+														<div class="label">Мощность двигателя:</div>
+														<div class="val">1.1 м</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+													<div>
+														<div class="label">Длина вил:</div>
+														<div class="val">650 мм</div>
 													</div>
 												</div>
 
-												<div class="swiper-pagination"></div>
-											</div>
-										</div>
+												<div class="status">
+													<b class="green">В наличии:</b>
+													<span class="count">54 шт</span>
 
-										<div class="info">
-											<div class="name">
-												<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
-											</div>
-
-											<div class="features">
-												<div>
-													<div class="label">Грузоподъемность:</div>
-													<div class="val">400 кг</div>
+													<div class="city">На складе в Челябинске</div>
 												</div>
 
-												<div>
-													<div class="label">Мощность двигателя:</div>
-													<div class="val">1.1 м</div>
+												<div class="price">
+													1 419 557 <span class="currency">Руб</span>
 												</div>
 
-												<div>
-													<div class="label">Длина вил:</div>
-													<div class="val">650 мм</div>
+												<div class="btns">
+													<button class="buy_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+														<span>В корзину</span>
+													</button>
+
+													<div class="amount">
+														<button type="button" class="btn minus"></button>
+
+														<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+														<button type="button" class="btn plus"></button>
+													</div>
+
+													<button class="quike_buy_btn">Купить в один клик</button>
 												</div>
-											</div>
-
-											<div class="status green">Товар в наличии</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-											</div>
-
-											<div class="price">
-												1 419 557 <span class="currency">Руб</span>
-											</div>
-
-											<div class="btns">
-												<button class="buy_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Купить</span>
-												</button>
-
-												<div class="amount">
-													<button type="button" class="btn minus"></button>
-
-													<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
-
-													<button type="button" class="btn plus"></button>
-												</div>
-
-												<button class="favorite_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
-												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 
 								<div class="swiper-slide">
-									<div class="product">
-										<div class="articul">90768</div>
+									<div class="product_wrap">
+										<div class="product">
+											<div class="articul">90768</div>
 
-										<button class="compare_btn">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
-											<span>Сравнить товар</span>
-										</button>
+											<button class="favorite_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+											</button>
 
-										<div class="images">
-											<div class="swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+											<button class="compare_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+											</button>
+
+											<div class="images">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-												</div>
-
-												<div class="swiper-pagination"></div>
-											</div>
-										</div>
-
-										<div class="info">
-											<div class="name">
-												<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
-											</div>
-
-											<div class="features">
-												<div>
-													<div class="label">Грузоподъемность:</div>
-													<div class="val">400 кг</div>
-												</div>
-
-												<div>
-													<div class="label">Мощность двигателя:</div>
-													<div class="val">1.1 м</div>
-												</div>
-
-												<div>
-													<div class="label">Длина вил:</div>
-													<div class="val">650 мм</div>
+													<div class="swiper-pagination"></div>
 												</div>
 											</div>
 
-											<div class="status green">Товар в наличии</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-											</div>
-
-											<div class="price">
-												1 419 557 <span class="currency">Руб</span>
-											</div>
-
-											<div class="btns">
-												<button class="buy_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Купить</span>
-												</button>
-
-												<div class="amount">
-													<button type="button" class="btn minus"></button>
-
-													<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
-
-													<button type="button" class="btn plus"></button>
+											<div class="info">
+												<div class="name">
+													<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
 												</div>
 
-												<button class="favorite_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div class="product">
-										<div class="articul">90768</div>
-
-										<button class="compare_btn">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
-											<span>Сравнить товар</span>
-										</button>
-
-										<div class="images">
-											<div class="swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+												<div class="features">
+													<div>
+														<div class="label">Грузоподъемность:</div>
+														<div class="val">400 кг</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+													<div>
+														<div class="label">Мощность двигателя:</div>
+														<div class="val">1.1 м</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+													<div>
+														<div class="label">Длина вил:</div>
+														<div class="val">650 мм</div>
 													</div>
 												</div>
 
-												<div class="swiper-pagination"></div>
-											</div>
-										</div>
+												<div class="status">
+													<b class="green">В наличии:</b>
+													<span class="count">54 шт</span>
 
-										<div class="info">
-											<div class="name">
-												<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
-											</div>
-
-											<div class="features">
-												<div>
-													<div class="label">Грузоподъемность:</div>
-													<div class="val">400 кг</div>
+													<div class="city">На складе в Челябинске</div>
 												</div>
 
-												<div>
-													<div class="label">Мощность двигателя:</div>
-													<div class="val">1.1 м</div>
+												<div class="price">
+													1 419 557 <span class="currency">Руб</span>
 												</div>
 
-												<div>
-													<div class="label">Длина вил:</div>
-													<div class="val">650 мм</div>
+												<div class="btns">
+													<button class="buy_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+														<span>В корзину</span>
+													</button>
+
+													<div class="amount">
+														<button type="button" class="btn minus"></button>
+
+														<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+														<button type="button" class="btn plus"></button>
+													</div>
+
+													<button class="quike_buy_btn">Купить в один клик</button>
 												</div>
-											</div>
-
-											<div class="status green">Товар в наличии</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-											</div>
-
-											<div class="price">
-												1 419 557 <span class="currency">Руб</span>
-											</div>
-
-											<div class="btns">
-												<button class="buy_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Купить</span>
-												</button>
-
-												<div class="amount">
-													<button type="button" class="btn minus"></button>
-
-													<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
-
-													<button type="button" class="btn plus"></button>
-												</div>
-
-												<button class="favorite_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
-												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 
 								<div class="swiper-slide">
-									<div class="product">
-										<div class="articul">90768</div>
+									<div class="product_wrap">
+										<div class="product">
+											<div class="articul">90768</div>
 
-										<button class="compare_btn">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
-											<span>Сравнить товар</span>
-										</button>
+											<button class="favorite_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+											</button>
 
-										<div class="images">
-											<div class="swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+											<button class="compare_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+											</button>
+
+											<div class="images">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-												</div>
-
-												<div class="swiper-pagination"></div>
-											</div>
-										</div>
-
-										<div class="info">
-											<div class="name">
-												<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
-											</div>
-
-											<div class="features">
-												<div>
-													<div class="label">Грузоподъемность:</div>
-													<div class="val">400 кг</div>
-												</div>
-
-												<div>
-													<div class="label">Мощность двигателя:</div>
-													<div class="val">1.1 м</div>
-												</div>
-
-												<div>
-													<div class="label">Длина вил:</div>
-													<div class="val">650 мм</div>
+													<div class="swiper-pagination"></div>
 												</div>
 											</div>
 
-											<div class="status green">Товар в наличии</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-											</div>
-
-											<div class="price">
-												1 419 557 <span class="currency">Руб</span>
-											</div>
-
-											<div class="btns">
-												<button class="buy_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Купить</span>
-												</button>
-
-												<div class="amount">
-													<button type="button" class="btn minus"></button>
-
-													<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
-
-													<button type="button" class="btn plus"></button>
+											<div class="info">
+												<div class="name">
+													<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
 												</div>
 
-												<button class="favorite_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div class="product">
-										<div class="articul">90768</div>
-
-										<button class="compare_btn">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
-											<span>Сравнить товар</span>
-										</button>
-
-										<div class="images">
-											<div class="swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+												<div class="features">
+													<div>
+														<div class="label">Грузоподъемность:</div>
+														<div class="val">400 кг</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+													<div>
+														<div class="label">Мощность двигателя:</div>
+														<div class="val">1.1 м</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+													<div>
+														<div class="label">Длина вил:</div>
+														<div class="val">650 мм</div>
 													</div>
 												</div>
 
-												<div class="swiper-pagination"></div>
-											</div>
-										</div>
+												<div class="status">
+													<b class="green">В наличии:</b>
+													<span class="count">54 шт</span>
 
-										<div class="info">
-											<div class="name">
-												<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
-											</div>
-
-											<div class="features">
-												<div>
-													<div class="label">Грузоподъемность:</div>
-													<div class="val">400 кг</div>
+													<div class="city">На складе в Челябинске</div>
 												</div>
 
-												<div>
-													<div class="label">Мощность двигателя:</div>
-													<div class="val">1.1 м</div>
+												<div class="price">
+													1 419 557 <span class="currency">Руб</span>
 												</div>
 
-												<div>
-													<div class="label">Длина вил:</div>
-													<div class="val">650 мм</div>
+												<div class="btns">
+													<button class="buy_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+														<span>В корзину</span>
+													</button>
+
+													<div class="amount">
+														<button type="button" class="btn minus"></button>
+
+														<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+														<button type="button" class="btn plus"></button>
+													</div>
+
+													<button class="quike_buy_btn">Купить в один клик</button>
 												</div>
-											</div>
-
-											<div class="status green">Товар в наличии</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-											</div>
-
-											<div class="price">
-												1 419 557 <span class="currency">Руб</span>
-											</div>
-
-											<div class="btns">
-												<button class="buy_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Купить</span>
-												</button>
-
-												<div class="amount">
-													<button type="button" class="btn minus"></button>
-
-													<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
-
-													<button type="button" class="btn plus"></button>
-												</div>
-
-												<button class="favorite_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
-												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 
 								<div class="swiper-slide">
-									<div class="product">
-										<div class="articul">90768</div>
+									<div class="product_wrap">
+										<div class="product">
+											<div class="articul">90768</div>
 
-										<button class="compare_btn">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
-											<span>Сравнить товар</span>
-										</button>
+											<button class="favorite_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+											</button>
 
-										<div class="images">
-											<div class="swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+											<button class="compare_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+											</button>
+
+											<div class="images">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-												</div>
-
-												<div class="swiper-pagination"></div>
-											</div>
-										</div>
-
-										<div class="info">
-											<div class="name">
-												<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
-											</div>
-
-											<div class="features">
-												<div>
-													<div class="label">Грузоподъемность:</div>
-													<div class="val">400 кг</div>
-												</div>
-
-												<div>
-													<div class="label">Мощность двигателя:</div>
-													<div class="val">1.1 м</div>
-												</div>
-
-												<div>
-													<div class="label">Длина вил:</div>
-													<div class="val">650 мм</div>
+													<div class="swiper-pagination"></div>
 												</div>
 											</div>
 
-											<div class="status green">Товар в наличии</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-											</div>
-
-											<div class="price">
-												1 419 557 <span class="currency">Руб</span>
-											</div>
-
-											<div class="btns">
-												<button class="buy_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Купить</span>
-												</button>
-
-												<div class="amount">
-													<button type="button" class="btn minus"></button>
-
-													<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
-
-													<button type="button" class="btn plus"></button>
+											<div class="info">
+												<div class="name">
+													<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
 												</div>
 
-												<button class="favorite_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
-												</button>
+												<div class="features">
+													<div>
+														<div class="label">Грузоподъемность:</div>
+														<div class="val">400 кг</div>
+													</div>
+
+													<div>
+														<div class="label">Мощность двигателя:</div>
+														<div class="val">1.1 м</div>
+													</div>
+
+													<div>
+														<div class="label">Длина вил:</div>
+														<div class="val">650 мм</div>
+													</div>
+												</div>
+
+												<div class="status">
+													<b class="green">В наличии:</b>
+													<span class="count">54 шт</span>
+
+													<div class="city">На складе в Челябинске</div>
+												</div>
+
+												<div class="price">
+													1 419 557 <span class="currency">Руб</span>
+												</div>
+
+												<div class="btns">
+													<button class="buy_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+														<span>В корзину</span>
+													</button>
+
+													<div class="amount">
+														<button type="button" class="btn minus"></button>
+
+														<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+														<button type="button" class="btn plus"></button>
+													</div>
+
+													<button class="quike_buy_btn">Купить в один клик</button>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 
 								<div class="swiper-slide">
-									<div class="product">
-										<div class="articul">90768</div>
+									<div class="product_wrap">
+										<div class="product">
+											<div class="articul">90768</div>
 
-										<button class="compare_btn">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
-											<span>Сравнить товар</span>
-										</button>
+											<button class="favorite_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+											</button>
 
-										<div class="images">
-											<div class="swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+											<button class="compare_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+											</button>
+
+											<div class="images">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+
+											<div class="info">
+												<div class="name">
+													<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
+												</div>
+
+												<div class="features">
+													<div>
+														<div class="label">Грузоподъемность:</div>
+														<div class="val">400 кг</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+													<div>
+														<div class="label">Мощность двигателя:</div>
+														<div class="val">1.1 м</div>
 													</div>
 
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
-													</div>
-
-													<div class="swiper-slide">
-														<a href="/" class="thumb">
-															<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
-														</a>
+													<div>
+														<div class="label">Длина вил:</div>
+														<div class="val">650 мм</div>
 													</div>
 												</div>
 
-												<div class="swiper-pagination"></div>
+												<div class="status">
+													<b class="green">В наличии:</b>
+													<span class="count">54 шт</span>
+
+													<div class="city">На складе в Челябинске</div>
+												</div>
+
+												<div class="price">
+													1 419 557 <span class="currency">Руб</span>
+												</div>
+
+												<div class="btns">
+													<button class="buy_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+														<span>В корзину</span>
+													</button>
+
+													<div class="amount">
+														<button type="button" class="btn minus"></button>
+
+														<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+														<button type="button" class="btn plus"></button>
+													</div>
+
+													<button class="quike_buy_btn">Купить в один клик</button>
+												</div>
 											</div>
 										</div>
+									</div>
+								</div>
 
-										<div class="info">
-											<div class="name">
-												<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
+								<div class="swiper-slide">
+									<div class="product_wrap">
+										<div class="product">
+											<div class="articul">90768</div>
+
+											<button class="favorite_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+											</button>
+
+											<button class="compare_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+											</button>
+
+											<div class="images">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+												</div>
 											</div>
 
-											<div class="features">
-												<div>
-													<div class="label">Грузоподъемность:</div>
-													<div class="val">400 кг</div>
+											<div class="info">
+												<div class="name">
+													<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
 												</div>
 
-												<div>
-													<div class="label">Мощность двигателя:</div>
-													<div class="val">1.1 м</div>
+												<div class="features">
+													<div>
+														<div class="label">Грузоподъемность:</div>
+														<div class="val">400 кг</div>
+													</div>
+
+													<div>
+														<div class="label">Мощность двигателя:</div>
+														<div class="val">1.1 м</div>
+													</div>
+
+													<div>
+														<div class="label">Длина вил:</div>
+														<div class="val">650 мм</div>
+													</div>
 												</div>
 
-												<div>
-													<div class="label">Длина вил:</div>
-													<div class="val">650 мм</div>
+												<div class="status">
+													<b class="green">В наличии:</b>
+													<span class="count">54 шт</span>
+
+													<div class="city">На складе в Челябинске</div>
+												</div>
+
+												<div class="price">
+													1 419 557 <span class="currency">Руб</span>
+												</div>
+
+												<div class="btns">
+													<button class="buy_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+														<span>В корзину</span>
+													</button>
+
+													<div class="amount">
+														<button type="button" class="btn minus"></button>
+
+														<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+														<button type="button" class="btn plus"></button>
+													</div>
+
+													<button class="quike_buy_btn">Купить в один клик</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="product_wrap">
+										<div class="product">
+											<div class="articul">90768</div>
+
+											<button class="favorite_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+											</button>
+
+											<button class="compare_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+											</button>
+
+											<div class="images">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
 												</div>
 											</div>
 
-											<div class="status green">Товар в наличии</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-											</div>
-
-											<div class="price">
-												1 419 557 <span class="currency">Руб</span>
-											</div>
-
-											<div class="btns">
-												<button class="buy_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Купить</span>
-												</button>
-
-												<div class="amount">
-													<button type="button" class="btn minus"></button>
-
-													<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
-
-													<button type="button" class="btn plus"></button>
+											<div class="info">
+												<div class="name">
+													<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
 												</div>
 
-												<button class="favorite_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
-												</button>
+												<div class="features">
+													<div>
+														<div class="label">Грузоподъемность:</div>
+														<div class="val">400 кг</div>
+													</div>
+
+													<div>
+														<div class="label">Мощность двигателя:</div>
+														<div class="val">1.1 м</div>
+													</div>
+
+													<div>
+														<div class="label">Длина вил:</div>
+														<div class="val">650 мм</div>
+													</div>
+												</div>
+
+												<div class="status">
+													<b class="green">В наличии:</b>
+													<span class="count">54 шт</span>
+
+													<div class="city">На складе в Челябинске</div>
+												</div>
+
+												<div class="price">
+													1 419 557 <span class="currency">Руб</span>
+												</div>
+
+												<div class="btns">
+													<button class="buy_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+														<span>В корзину</span>
+													</button>
+
+													<div class="amount">
+														<button type="button" class="btn minus"></button>
+
+														<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+														<button type="button" class="btn plus"></button>
+													</div>
+
+													<button class="quike_buy_btn">Купить в один клик</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="product_wrap">
+										<div class="product">
+											<div class="articul">90768</div>
+
+											<button class="favorite_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+											</button>
+
+											<button class="compare_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+											</button>
+
+											<div class="images">
+												<div class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+
+														<div class="swiper-slide">
+															<a href="/" class="thumb">
+																<img src="images/tmp/product_thumb1.jpg" alt="" loading="lazy">
+															</a>
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+
+											<div class="info">
+												<div class="name">
+													<a href="/">Штабелер электрический самоходный XILIN CDDK20 2.0Тх4.5М (с платформой) 4 строчка</a>
+												</div>
+
+												<div class="features">
+													<div>
+														<div class="label">Грузоподъемность:</div>
+														<div class="val">400 кг</div>
+													</div>
+
+													<div>
+														<div class="label">Мощность двигателя:</div>
+														<div class="val">1.1 м</div>
+													</div>
+
+													<div>
+														<div class="label">Длина вил:</div>
+														<div class="val">650 мм</div>
+													</div>
+												</div>
+
+												<div class="status">
+													<b class="green">В наличии:</b>
+													<span class="count">54 шт</span>
+
+													<div class="city">На складе в Челябинске</div>
+												</div>
+
+												<div class="price">
+													1 419 557 <span class="currency">Руб</span>
+												</div>
+
+												<div class="btns">
+													<button class="buy_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+														<span>В корзину</span>
+													</button>
+
+													<div class="amount">
+														<button type="button" class="btn minus"></button>
+
+														<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+														<button type="button" class="btn plus"></button>
+													</div>
+
+													<button class="quike_buy_btn">Купить в один клик</button>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -2602,7 +2728,7 @@
 				</section>
 
 
-				<section class="order_form">
+				<section class="order_form block big_m">
 					<div class="cont row">
 						<div class="block_head">
 							<div class="title top_line">Нужна помощь<br> в выборе оборудования?</div>
@@ -2670,7 +2796,7 @@
 
 							<div class="agree">
 								<label class="toggle_checkbox">
-									<input type="checkbox" name="agree">
+									<input type="checkbox" name="agree" checked>
 
 									<div class="check"></div>
 
@@ -2686,80 +2812,116 @@
 						</form>
 					</div>
 				</section>
+
+
+				<section class="contacts_block block">
+					<div class="cont">
+						<div class="block_head small_m">
+							<div class="title">
+								Контакты <button class="current_city modal_btn" data-modal="city_modal">Челябинск</button>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="phone">
+								<div class="label">Сделать заказ или уточнить<br> наличие по телефону</div>
+
+								<div class="val">
+									<a href="tel:+73512009316">+7 (351) 200-93-16</a>
+								</div>
+							</div>
+
+							<div class="phone">
+								<div class="label">Единый бесплатный номер<br> для звонков по России</div>
+
+								<div class="val">
+									<a href="tel:88002006616">8 (800) 200-66-16</a>
+								</div>
+							</div>
+
+							<div class="email">
+								<div class="label">Заказывайте онлайн в удобное<br> время через электронную почту</div>
+
+								<div class="val">
+									<a href="mailto:lchel@deltainzhiniring.ru">lchel@deltainzhiniring.ru</a>
+								</div>
+							</div>
+
+							<div class="messengers">
+								<div class="label">Написать в месенджеры</div>
+
+								<div class="val">
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<img src="images/ic_whatsapp.svg" alt="">
+										<span>WhatsApp</span>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<img src="images/ic_telegram.svg" alt="">
+										<span>Telegram</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="work_time">
+								<div class="label">Время работы:</div>
+
+								<div class="val">
+									<div>
+										<div class="day">Пн-Пт:</div>
+										<div class="time">08:00 - 18:00</div>
+									</div>
+
+									<div>
+										<div class="day">Сб:</div>
+										<div class="time">08:00 - 17:00</div>
+									</div>
+
+									<div>
+										<div class="day">Вс</div>
+										<div class="time">Выходной</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cities">Осуществляем доставку в города: Москва, Балашиха, Подольск, Мытищи, Химки, Королёв, Люберцы, Красногорск, Электросталь, Одинцово, Коломна, Домодедово, Щёлково, Серпухов, Раменское, Долгопрудный, Орехово-Зуево, Пушкино, Реутов, Жуковский, Ногинск, Сергиев Посад, Воскресенск, Лобня, Зеленоград, Истра, Звенигород, Видное, Клин, Чехов, Ивантеевка, Дубна, Наро-Фоминск, Егорьевск, Котельники, Лыткарино, Павловский Посад, Дмитров, Ступино, Фрязино, Дзержинский, Солнечногорск</div>
+					</div>
+				</section>
 			</div>
 
 
 			<footer>
-				<div class="contacts">
-					<div class="cont row">
-						<div class="city">
-							<div class="label">Ваш город:</div>
-
-							<div class="val">
-								<button class="btn modal_btn" data-modal="city_modal">Санкт-Петербург</button>
-							</div>
-						</div>
-
-						<div class="phone">
-							<div class="label">Региональный номер:</div>
-
-							<div class="val">
-								<a href="tel:+73512009316">+7 (351) 200-93-16</a>
-							</div>
-						</div>
-
-						<div class="phone">
-							<div class="label">Бесплатный звонок:</div>
-
-							<div class="val">
-								<a href="tel:88002006616">8 (800) 200-66-16</a>
-							</div>
-						</div>
-
-						<div class="email">
-							<div class="label">Электронный адрес</div>
-
-							<div class="val">
-								<a href="mailto:lchel@deltainzhiniring.ru">lchel@deltainzhiniring.ru</a>
-							</div>
-						</div>
-
-						<div class="work_time">
-							<div class="label">Время работы:</div>
-
-							<div class="val">
-								<div>
-									<div class="day">Пн-Пт:</div>
-									<div class="time">08:00 - 18:00</div>
-								</div>
-
-								<div>
-									<div class="day">Сб:</div>
-									<div class="time">08:00 - 17:00</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="delivery">Осуществляем доставку в города: Москва, Балашиха, Подольск, Мытищи, Химки, Королёв, Люберцы, Красногорск, Электросталь, Одинцово, Коломна, Домодедово, Щёлково, Серпухов, Раменское, Долгопрудный, Орехово-Зуево, Пушкино, Реутов, Жуковский, Ногинск, Сергиев Посад, Воскресенск, Лобня, Зеленоград, Истра, Звенигород, Видное, Клин, Чехов, Ивантеевка, Дубна, Наро-Фоминск, Егорьевск, Котельники, Лыткарино, Павловский Посад, Дмитров, Ступино, Фрязино, Дзержинский, Солнечногорск</div>
-					</div>
-				</div>
-
 				<div class="data">
 					<div class="cont row">
 						<div>
 							<div class="requisites">
-								<div class="title">Реквизиты компании</div>
+								<div class="title">Главный офис</div>
 
 								<div class="val">
 									<div>ООО «ДЕЛЬТА-ИНЖИНИРИНГ»</div>
 									<div>ИНН: 7453286329</div>
-									<div>КПП: 745301001</div>
-									<div>ОГРН:1157453008900</div>
+									<div>454091, Челябинск,</div>
+									<div>улица Труда, 82а, офис 405</div>
 								</div>
 							</div>
 
 							<div class="ya_rating">
-								<img src="images/tmp/ya_rating.jpg" alt="">
+								<div class="ya_logo">
+									<img src="images/ya_logo.svg" alt="" loading="lazy">
+								</div>
+
+								<div class="val">4,9</div>
+
+								<div class="stars">
+									<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
+									<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
+									<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
+									<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star_a"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
+								</div>
+
+								<div class="exp">Рейтинг организации в яндексе</div>
 							</div>
 						</div>
 
@@ -2838,6 +3000,15 @@
 
 						<div class="articul">90768</div>
 
+						<button class="favorite_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+						</button>
+
+						<button class="compare_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+						</button>
+
 						<div class="status green">Товар в наличии</div>
 
 						<div class="rating">
@@ -2852,13 +3023,11 @@
 					</div>
 
 					<div class="price">
-						1 419 557 <span class="currency">Руб</span>
+						<b>1 419 557</b> <span class="currency">Руб</span>
+						<small>Цена с учетом НДС 20%</small>
 					</div>
 
-					<button class="buy_btn">
-						<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-						<span>В корзину</span>
-					</button>
+					<button class="buy_btn">В корзину</button>
 				</div>
 			</div>
 		</section>
@@ -2994,10 +3163,45 @@
 
 		<section class="cookie">
 			<div class="cont row">
-				<div>Мы используем файлы cookie. Они помогают улучшить ваше взаимодействие с сайтом <a href="/">подробнее</a></div>
+				<div>Мы используем файлы cookie, они помогают улучшить ваше взаимодействие с сайтом <a href="/">Подробнее</a></div>
 
 				<button class="btn">Принять</button>
 			</div>
+		</section>
+
+
+		<section class="modal" id="quike_order_modal">
+			<div class="modal_title">Быстрый заказ</div>
+
+			<div class="modal_desc">Обратите внимание что мы осуществляем<br> звонок с номера <b>+7 (800) 200 66 15</b></div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Введите ваше имя">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="+7 (___)___-__-__">
+					</div>
+				</div>
+
+				<div class="line agree">
+					<label class="toggle_checkbox">
+						<input type="checkbox" name="agree" checked>
+
+						<div class="check"></div>
+
+						<div>Я согласен на обработку <a href="/" target="_blank">персональных данных</a></div>
+					</label>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Оформить заказ</button>
+				</div>
+			</form>
 		</section>
 
 
@@ -3006,8 +3210,8 @@
 		<script src="js/functions.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/fancybox.js"></script>
-		<script src="js/responsiveMenu.js"></script>
 		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/clipboard.min.js"></script>
 		<script src="js/imask.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
