@@ -14,11 +14,18 @@ document.addEventListener('DOMContentLoaded', function () {
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			spaceBetween: 40,
 			slidesPerView: 'auto',
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 28
+				},
+				1440: {
+					spaceBetween: 40
+				}
 			}
 		})
 	}
@@ -106,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 			breakpoints: {
 				0: {
-					spaceBetween: 12,
+					spaceBetween: 13,
 					slidesPerView: 'auto'
 				},
 				480: {
@@ -193,8 +200,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 			breakpoints: {
 				0: {
-					spaceBetween: 12,
-					slidesPerView: 'auto'
+					spaceBetween: 13,
+					slidesPerView: 2
 				},
 				480: {
 					spaceBetween: 20,
@@ -203,6 +210,10 @@ document.addEventListener('DOMContentLoaded', function () {
 				768: {
 					spaceBetween: 24,
 					slidesPerView: 3
+				},
+				1024: {
+					spaceBetween: 24,
+					slidesPerView: 4
 				},
 				1280: {
 					spaceBetween: 36,
@@ -331,6 +342,29 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Mob. contacts gallery
+	let contactsMobGallery = document.querySelector('.contacts_info .mob_gallery .swiper')
+
+	if (contactsMobGallery) {
+		new Swiper('.contacts_info .mob_gallery .swiper', {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 20,
+			slidesPerView: 1,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			lazy: true
+		})
+	}
+
+
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.trapFocus = false
@@ -389,29 +423,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Mob. menu
-	$('.mob_header .mob_menu_btn').click((e) => {
+	$('.mob_header .mob_menu_btn, .mob_header .mob_menu_close_btn').click((e) => {
 		e.preventDefault()
 
-		$('.mob_header .mob_menu_btn').addClass('active')
-		$('body').addClass('menu_open')
-		$('header').addClass('show')
-		$('.overlay').fadeIn(300)
-	})
-
-	$('header > .close, .overlay').click((e) => {
-		e.preventDefault()
-
-		$('.mob_header .mob_menu_btn').removeClass('active')
-		$('body').removeClass('menu_open')
-		$('header').removeClass('show')
-		$('.overlay').fadeOut(300)
+		$('.mob_header .mob_menu_btn').toggleClass('active')
+		$('body').toggleClass('lock')
+		$('.mob_menu').toggleClass('show')
 	})
 
 
 	// Phone input mask
 	const phoneInputs = document.querySelectorAll('input[type=tel]')
-
-	console.log(phoneInputs)
 
 	if (phoneInputs) {
 		phoneInputs.forEach(el => {
@@ -852,6 +874,50 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		e.clearSelection()
 	})
+
+
+	if (is_touch_device()) {
+		const subLinks = document.querySelectorAll('header .links .sub_links')
+
+		// Sublinks on the touch screen
+		$('header .links a.sub_link').addClass('touch_link')
+
+		$('header .links a.sub_link').click(function (e) {
+			let dropdown = $(this).next()
+
+			if (dropdown.css('visibility') === 'hidden') {
+				e.preventDefault()
+
+				subLinks.forEach(el => el.classList.remove('show'))
+				dropdown.addClass('show')
+
+				BODY.style = 'cursor: pointer;'
+			}
+		})
+
+		// Close the submenu when clicking outside it
+		document.addEventListener('click', e => {
+			if ($(e.target).closest('.links').length === 0) {
+				subLinks.forEach(el => el.classList.remove('show'))
+
+				BODY.style = 'cursor: default;'
+			}
+		})
+	}
+
+
+	// Custom select - Nice select
+	const selects = document.querySelectorAll('select')
+
+	if (selects) {
+		selects.forEach(el => {
+			NiceSelect.bind(el, {
+				placeholder: el.getAttribute('data-placeholder')
+			})
+
+			el.addEventListener('change', () => el.classList.add('selected'))
+		})
+	}
 })
 
 
@@ -961,7 +1027,7 @@ window.addEventListener('resize', function () {
 		if (!fakeResize2) {
 			fakeResize2 = true
 
-			if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+			if (windowW < 360) document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
 		} else {
 			fakeResize = false
 			fakeResize2 = true

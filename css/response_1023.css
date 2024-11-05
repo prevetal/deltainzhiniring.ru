@@ -4,6 +4,22 @@
     /*-------------------
         Global styles
     -------------------*/
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        height: 4px;
+
+        gap: 12px;
+    }
+
+
+    .swiper-pagination-bullet
+    {
+        max-width: 24px;
+        height: 4px;
+    }
 
 
 
@@ -17,114 +33,1074 @@
 
 
 
-    /*------------
-        Header
-    ------------*/
-    header
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
     {
-        position: fixed;
-        z-index: 101;
-        top: 0;
-        left: 0;
-
-        width: 310px;
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        margin: 0;
-        padding: 0;
-
-        transition: transform .3s linear;
-        transform: translateX(-100%);
-
-        background: #fff;
+        padding-right: 72px;
     }
-
-    header.show
-    {
-        transform: translateX(0);
-    }
-
-
-    header .scroll
-    {
-        display: flex;
-        overflow: auto;
-        align-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        padding: 20px 0;
-
-        overscroll-behavior-y: contain;
-    }
-
-    header .scroll > *
-    {
-        width: 100%;
-    }
-
-
-
-    /*-----------------
-        Mob. header
-    -----------------*/
-    .mob_header
-    {
-        display: block;
-    }
-
-
-
-    /*-------------
-        Sidebar
-    -------------*/
 
 
 
     /*---------------
         Page head
     ---------------*/
+    .page_title b
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .logos > *
+    {
+        width: calc(16.666% - 20px);
+    }
 
 
 
     /*----------------
-        Block head
+        Advantages
     ----------------*/
+    .advantages .row > *
+    {
+        width: calc(50% - 5px);
+    }
 
 
 
-    /*------------------
-        Form elements
-    ------------------*/
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block .row
+    {
+        margin-left: -24px;
+    }
+
+
+    .contacts_block .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-left: 24px;
+    }
+
+
+    .contacts_block .messengers .val
+    {
+        gap: 20px;
+    }
+
+
+    .contacts_block .cities
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*------------
+        Cookie
+    ------------*/
+    .cookie
+    {
+        text-align: left;
+    }
+
+
+    .cookie .row > *
+    {
+        max-width: calc(100% - 164px);
+    }
+
+
+    .cookie .btn
+    {
+        width: 140px;
+        margin-left: 24px;
+    }
 
 
 
     /*----------------
-        Typography
+        Brand info
     ----------------*/
+    .brand_info .videos iframe
+    {
+        height: 200px;
+    }
+
+
+
+    /*---------------
+        Equipment
+    ---------------*/
+    .equipment .row > *
+    {
+        width: 25%;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .sort
+    {
+        display: none;
+    }
+
+
+    .products .mob_sort
+    {
+        display: inline-block;
+
+        vertical-align: top;
+    }
+
+
+    .products .row
+    {
+        margin-bottom: -28px;
+        margin-left: -13px;
+    }
+
+
+    .products .row > *
+    {
+        width: calc(33.333% - 13px);
+        margin-bottom: 28px;
+        margin-left: 13px;
+    }
+
+
+    .products .product,
+    .products .product:hover
+    {
+        padding: 30px 0 0;
+
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+
+    .products .product .name
+    {
+        font-size: 18px;
+    }
+
+
+    .products .product .features > *
+    {
+        display: block;
+    }
+
+    .products .product .features > * + *
+    {
+        margin-top: 4px;
+    }
+
+
+    .products .product .features .label
+    {
+        width: 100%;
+    }
+
+
+    .products .product .status .city
+    {
+        margin-top: 8px;
+    }
+
+
+
+    /*------------
+        Notice
+    ------------*/
+    .notice
+    {
+        padding: 23px;
+
+        border-radius: 10px;
+    }
+
+
+    .notice .icon
+    {
+        display: none;
+    }
+
+
+    .notice .title
+    {
+        font-size: 24px;
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .notice .title br
+    {
+        display: none;
+    }
+
+
+    .notice .desc
+    {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------
+        Delivery info
+    -------------------*/
+    .delivery_info .text_block
+    {
+        width: 100%;
+    }
+
+
+    .delivery_info img
+    {
+        width: auto;
+        margin-top: 40px;
+        margin-right: auto;
+    }
+
+
+
+    /*-------------------------
+        Delivery advantages
+    -------------------------*/
+    .delivery_advantages .row
+    {
+        margin-bottom: -48px;
+        margin-left: -24px;
+        padding: 0;
+    }
+
+
+    .delivery_advantages .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 48px;
+        margin-left: 24px;
+    }
+
+
+    .delivery_advantages .item
+    {
+        padding: 44px 14px 14px;
+    }
+
+
+    .delivery_advantages .item .icon
+    {
+        top: -32px;
+        right: 0;
+        bottom: auto;
+        left: 0;
+
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        padding: 12px;
+    }
+
+
+    .delivery_advantages .item .name
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*-------------------------
+        Transport companies
+    -------------------------*/
+    .transport_companies .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*----------------------
+        Delivery methods
+    ----------------------*/
+    .delivery_methods .text_block
+    {
+        width: 100%;
+    }
+
+
+    .delivery_methods .img
+    {
+        max-width: 75%;
+        margin-top: 24px;
+        margin-right: auto;
+    }
+
+
+
+    /*----------------
+        Info block
+    ----------------*/
+    .info_block .section .title
+    {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+
+    .info_block .section .title span
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+
+    /*-------------------
+        Order methods
+    -------------------*/
+    .order_methods .data
+    {
+        padding: 23px;
+    }
+
+
+    .order_methods .row
+    {
+        justify-content: flex-start;
+
+        margin-bottom: -40px;
+        margin-left: -24px;
+    }
+
+
+    .order_methods .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+
+    /*---------------
+        How order
+    ---------------*/
+    .how_order .method .icon
+    {
+        width: 160px;
+        height: 80px;
+    }
+
+
+    .how_order .method .icon + div
+    {
+        width: calc(100% - 184px);
+    }
+
+
+    .how_order .method .step:before
+    {
+        font-size: 180px;
+
+        width: 184px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        gap: 24px;
+    }
+
+
+    .contacts_info .item .phone,
+    .contacts_info .item .email,
+    .contacts_info .item .time,
+    .contacts_info .item .messengers
+    {
+        font-size: 18px;
+    }
+
+
+    .contacts_info .item .exp
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+
+
+    .contacts_info .mob_gallery
+    {
+        display: block;
+    }
+
+
+    .contacts_info .departments .title
+    {
+        font-size: 22px;
+
+        position: relative;
+
+        margin-bottom: 20px;
+        padding-top: 16px;
+    }
+
+
+    .contacts_info .departments .title:before
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 80px;
+        height: 2px;
+
+        content: '';
+        pointer-events: none;
+
+        background: #38a1ab;
+    }
+
+
+    .contacts_info .departments .list
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .contacts_info .gallery
+    {
+        display: none;
+    }
+
+
+
+    /*---------------------
+        Requisites info
+    ---------------------*/
+    .requisites_info .download
+    {
+        display: none;
+    }
+
+
+    .requisites_info .mob_download
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .product
+    {
+        padding: 35px 15px 19px;
+
+        border: 1px solid #d2d2d2;
+        border-radius: 10px;
+    }
+
+
+    .cart_info .product .articul
+    {
+        top: 11px;
+    }
+
+
+    .cart_info .product .thumb
+    {
+        width: 92px;
+        height: 92px;
+    }
+
+
+    .cart_info .product .name
+    {
+        width: calc(100% - 440px);
+    }
+
+
+    .cart_info .product .amount
+    {
+        width: 120px;
+    }
+
+
+    .cart_info .product .amount .btn
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .cart_info .product .amount .input
+    {
+        font-size: 18px;
+
+        height: 40px;
+        padding: 0 39px;
+    }
+
+
+    .cart_info .product .buy
+    {
+        width: 148px;
+    }
+
+
+    .cart_info .product .status
+    {
+        position: relative;
+    }
+
+
+    .cart_info .product .price
+    {
+        font-size: 22px;
+        line-height: 100%;
+    }
+
+
+    .cart_info .product .delete_btn
+    {
+        position: absolute;
+        top: -21px;
+        right: 15px;
+
+        width: 40px;
+        height: 40px;
+
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        background: #236d73;
+    }
+
+
+
+    .cart_info .process .steps
+    {
+        padding: 15px 19px;
+    }
+
+
+    .cart_info .process .steps .sep
+    {
+        width: 20px;
+        height: 16px;
+    }
+
+
+
+    /*----------------------
+        Checkout success
+    ----------------------*/
+    .checkout_success .desc
+    {
+        padding: 19px;
+    }
+
+
+
+    .checkout_success .in_order .product
+    {
+        padding-bottom: 20px;
+    }
+
+
+    .checkout_success .in_order .product + .product
+    {
+        margin-top: 20px;
+    }
 
 
 
     /*-----------------
-        Main slider
+        Credit info
     -----------------*/
+    .credit_info .text_block
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .credit_info .image
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .credit_info .image img
+    {
+        margin-top: 0;
+    }
+
+
+    .credit_info .pluses .row > *
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .credit_info .pluses .item
+    {
+        padding: 21px;
+    }
+
+
+
+    /*------------------
+        Credit order
+    ------------------*/
+    .credit_order .form .col
+    {
+        width: 100%;
+    }
+
+
+    .credit_order .form .col + .col
+    {
+        margin-top: 40px;
+    }
+
+
+    .credit_order .form .text_block
+    {
+        margin-top: 20px;
+    }
+
+
+    .credit_order .form .text_block ul li + li
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*------------------
+        Boss message
+    ------------------*/
+    .boss_message .text_block
+    {
+        width: 100%;
+    }
+
+
+    .boss_message .boss
+    {
+        position: relative;
+
+        width: calc(50% - 12px);
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+
+    .boss_message .boss .photo
+    {
+        margin-bottom: 0;
+    }
+
+
+    .boss_message .boss .name
+    {
+        position: absolute;
+        bottom: 28px;
+        left: 100%;
+
+        width: 100%;
+        margin-left: 24px;
+    }
+
+
+    .boss_message .boss .post
+    {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+
+        width: 100%;
+        margin-left: 24px;
+
+        text-align: left;
+    }
+
+
+    .boss_message .boss .sign
+    {
+        bottom: -48px;
+        left: 100%;
+
+        margin-left: 33.333%;
+    }
+
+
+    .boss_message .logos
+    {
+        width: calc(50% - 12px);
+        margin-top: 40px;
+        margin-left: auto;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .item
+    {
+        font-size: 22px;
+
+        min-height: 120px;
+        padding: 14px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .row
+    {
+        margin-bottom: -24px;
+    }
+
+
+    .history .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+    }
+
+
+    .history .img
+    {
+        margin: -88px 0 0 -20px;
+    }
+
+
+
+    /*------------------
+        Payment info
+    ------------------*/
+    .payment_info .item .icon
+    {
+        width: 120px;
+        height: 68px;
+    }
+
+
+    .payment_info .item .icon + *
+    {
+        width: calc(100% - 160px);
+    }
+
+
+    .payment_info .data
+    {
+        width: 100%;
+    }
+
+
+    .payment_info .logos
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        width: calc(100% + 20px);
+        max-width: calc(100% + 20px);
+        margin-top: 24px;
+        margin-left: -20px;
+    }
+
+
+    .payment_info .logos > *
+    {
+        width: calc(33.333% - 20px);
+        height: 68px;
+        margin-left: 20px;
+    }
+
+
+    .payment_info .logos > * + *,
+    .payment_info .images > * + *
+    {
+        margin-top: 0;
+    }
+
+
+    .payment_info .images
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+
+    /*----------------------
+        Deliveries to KZ
+    ----------------------*/
+    .deliveries_to_KZ .head
+    {
+        height: 240px;
+    }
+
+
+    .deliveries_to_KZ .pluses .row > *
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .deliveries_to_KZ .pluses .name
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*---------------
+        Geography
+    ---------------*/
+    .geography .map
+    {
+        height: 400px;
+    }
+
+
+
+    /*----------------------
+        Cooperation head
+    ----------------------*/
+    .cooperation_head .data
+    {
+        height: 240px;
+    }
+
+
+
+    /*---------------------
+        Categories wall
+    ---------------------*/
+    .categories_wall .row > *
+    {
+        width: calc(25% - 24px);
+    }
+
+
+
+    /*-------------------------
+        Cooperation reviews
+    -------------------------*/
+    .cooperation_reviews .swiper
+    {
+        margin: 280px 0 0;
+
+        border-radius: 0 0 40px 40px;
+    }
+
+
+    .cooperation_reviews .review
+    {
+        margin: 0;
+        padding: 0 40px;
+    }
+
+
+    .cooperation_reviews .review .data
+    {
+        width: 100%;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 60px;
+
+        text-align: center;
+    }
+
+
+    .cooperation_reviews .review .thumb
+    {
+        width: 320px;
+        height: 320px;
+        margin: -240px auto 28px;
+    }
+
+
+    .cooperation_reviews .review .author
+    {
+        display: block;
+
+        margin-top: 24px;
+    }
+
+
+    .cooperation_reviews .review .author .post br
+    {
+        display: none;
+    }
+
+
+    .cooperation_reviews .swiper-horizontal > .swiper-pagination-bullets,
+    .cooperation_reviews .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .cooperation_reviews .swiper-pagination-custom,
+    .cooperation_reviews .swiper-pagination-fraction
+    {
+        bottom: 20px;
+        left: 0;
+
+        width: 100%;
+        margin: 0;
+    }
+
+
+
+    /*--------------------
+        Become partner
+    --------------------*/
+    .become_partner .steps
+    {
+        margin-bottom: -20px;
+        margin-left: -88px;
+    }
+
+
+    .become_partner .steps > *
+    {
+        margin-bottom: 20px;
+        margin-left: 88px;
+
+        white-space: nowrap;
+    }
+
+
+    .become_partner .steps > *:nth-child(3n+1),
+    .become_partner .steps > *:nth-child(3n+2)
+    {
+        width: auto;
+    }
+
+
+    .become_partner .steps .step .icon
+    {
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+    }
+
+
+    .become_partner .steps .step:after
+    {
+        margin-left: 24px;
+    }
+
+    .become_partner .steps .step:nth-child(3n+3):after
+    {
+        display: block;
+    }
+
+
+
+    /*------------------
+        Antibot page
+    ------------------*/
+    .antibot_page .data
+    {
+        width: 560px;
+        padding: 24px 40px;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page .code
+    {
+        font-size: 200px;
+        line-height: 180px;
+    }
+
+
+    .error_page img
+    {
+        width: 360px;
+        margin-top: -72px;
+        margin-right: 224px;
+    }
+
+
+    .error_page img ~ img
+    {
+        margin-left: 224px;
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+    .certs .row .item .thumb
+    {
+        height: 260px;
+    }
+
+
+
+    /*------------------
+        Compare info
+    ------------------*/
+    .compare_info .categories .row > *
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .compare_info .categories .category
+    {
+        min-height: 108px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
-
-
-
-    /*-----------
-        PopUp
-    -----------*/
+    footer .links.big .items > *:last-child
+    {
+        min-width: 0;
+    }
 }
