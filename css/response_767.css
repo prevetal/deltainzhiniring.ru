@@ -23,6 +23,12 @@
     /*--------------
         Fancybox
     --------------*/
+    .fancybox__container
+    {
+        padding: 70px 0;
+    }
+
+
     .fancybox__backdrop
     {
         background: none;
@@ -31,7 +37,7 @@
 
     .fancybox__slide
     {
-        padding: 70px 0;
+        padding: 0;
     }
 
 

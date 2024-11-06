@@ -13239,7 +13239,8 @@ aside .links a.active
 }
 
 
-.fixed_mob_menu a
+.fixed_mob_menu a,
+.fixed_mob_menu .btn
 {
     font-size: 10px;
 
@@ -13249,6 +13250,7 @@ aside .links a.active
     flex-wrap: wrap;
     justify-content: center;
 
+    width: 100%;
     height: 69px;
     padding: 8px;
 
@@ -14295,4 +14297,133 @@ footer .bottom
 
     width: 104px;
     max-width: 100%;
+}
+
+
+
+/*------------------------------
+    PopUp - Mob. phone modal
+------------------------------*/
+#mob_catalog_modal .search
+{
+    padding: 20px 13px;
+}
+
+
+#mob_catalog_modal .search ::-webkit-input-placeholder
+{
+    color: #3c3c3c;
+}
+
+#mob_catalog_modal .search :-moz-placeholder
+{
+    color: #3c3c3c;
+}
+
+#mob_catalog_modal .search ::-moz-placeholder
+{
+    opacity: 1;
+    color: #3c3c3c;
+}
+
+#mob_catalog_modal .search :-ms-input-placeholder
+{
+    color: #3c3c3c;
+}
+
+
+#mob_catalog_modal .search .input
+{
+    font-family: var(--font_family);
+    font-size: 14px;
+
+    display: block;
+
+    width: 100%;
+    height: 47px;
+    padding-right: 17px;
+    padding-left: 17px;
+
+    color: var(--text_color);
+    border: 1px solid #dfdfde;
+    border-radius: 10px;
+    background: none;
+}
+
+
+#mob_catalog_modal .search .input:-webkit-autofill
+{
+    -webkit-box-shadow: inset 0 0 0 50px var(--form_bg_color) !important;
+}
+
+
+
+#mob_catalog_modal .links
+{
+    margin-top: -20px;
+    padding: 20px 13px;
+}
+
+
+#mob_catalog_modal .links a
+{
+    font-size: 16px;
+    line-height: 100%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    min-height: 48px;
+    padding: 7px 5px 7px 0;
+
+    text-decoration: none;
+
+    color: currentColor;
+    border-bottom: 1px solid #e2e3e4;
+}
+
+
+#mob_catalog_modal .links .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 40px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+#mob_catalog_modal .links .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#mob_catalog_modal .links span
+{
+    width: calc(100% - 68px);
+}
+
+
+#mob_catalog_modal .links .arr
+{
+    display: block;
+
+    width: 12px;
+    height: 6px;
+    margin-left: auto;
+
+    transform: rotate(90deg);
+
+    color: #19666d;
 }
