@@ -4882,13 +4882,33 @@ aside .links a.active
 
 
 
+.products .mob_head
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+}
+
+
+
 .products .mob_sort
 {
     position: relative;
 
     display: none;
 
+    width: calc(50% - 6px);
     margin-bottom: 8px;
+}
+
+
+.products .mob_head .mob_sort
+{
+    margin: 0;
 }
 
 
@@ -5012,6 +5032,37 @@ aside .links a.active
 .products .mob_sort .nice-select.open + .arr
 {
     transform: rotate(0deg);
+}
+
+
+
+.products .mob_filter_btn
+{
+    font-size: 14px;
+    font-weight: 500;
+
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: calc(50% - 6px);
+    height: 48px;
+
+    border-radius: 6px;
+    background: #f7dd64;
+
+    gap: 8px;
+}
+
+
+.products .mob_filter_btn .icon
+{
+    display: block;
+
+    width: 11px;
+    height: 10px;
 }
 
 
@@ -11444,6 +11495,83 @@ aside .links a.active
 {
     color: #fff;
     background: #236d73;
+}
+
+
+
+.category_info .mob_categories
+{
+    display: none;
+
+    margin-bottom: 24px;
+}
+
+
+.category_info .mob_categories .category
+{
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    min-height: 116px;
+    padding: 15px;
+
+    text-decoration: none;
+
+    color: currentColor;
+    border: 1px solid #c7c7c7;
+    border-radius: 6px;
+}
+
+
+.category_info .mob_categories .category .thumb
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+}
+
+
+.category_info .mob_categories .category .thumb img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.category_info .mob_categories .category .name
+{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+
+    width: calc(100% - 96px);
+    margin-bottom: 24px;
+
+    color: #236d73;
+}
+
+
+.category_info .mob_categories .category .count
+{
+    position: absolute;
+    bottom: 19px;
+    left: 111px;
+
+    empty-cells: hide;
+
+    color: #686868;
 }
 
 

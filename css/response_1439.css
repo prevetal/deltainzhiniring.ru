@@ -31,6 +31,14 @@
     }
 
 
+    .content_flex .content
+    {
+        position: relative;
+
+        width: calc(100% - var(--sidebar_width) - 40px);
+    }
+
+
 
     /*----------
         Tabs
@@ -241,6 +249,49 @@
 
 
 
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .filter .name,
+    aside .filter .toggle_checkbox
+    {
+        font-size: 18px;
+    }
+
+
+    aside .filter .range .input
+    {
+        font-size: 18px;
+    }
+
+
+    aside .filter .irs
+    {
+        margin-top: 28px;
+    }
+
+
+    aside .filter .checkbox
+    {
+        font-size: 18px;
+    }
+
+
+    aside .filter .spoler_btn
+    {
+        font-size: 18px;
+    }
+
+
+    aside .filter .filter_reset_btn
+    {
+        font-size: 18px;
+
+        height: 48px;
+    }
+
+
+
     /*------------------
         Form elements
     ------------------*/
@@ -319,6 +370,14 @@
     .text_block .image_block .data > * + *
     {
         margin-top: 24px;
+    }
+
+
+    .text_block .spoler_btn
+    {
+        font-size: 18px;
+
+        padding-top: 20px;
     }
 
 
@@ -491,6 +550,18 @@
     /*--------------
         Products
     --------------*/
+    .products .sort
+    {
+        margin-left: -24px;
+    }
+
+
+    .products .sort .btn
+    {
+        margin-left: 24px;
+    }
+
+
     .products .product .articul
     {
         font-size: 18px;
@@ -1858,6 +1929,97 @@
     {
         font-size: 18px;
         line-height: 28px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .head .count
+    {
+        font-size: 18px;
+
+        margin-bottom: 4px;
+    }
+
+
+
+    .category_info .filter_selected .row
+    {
+        margin-bottom: -24px;
+    }
+
+
+    .category_info .filter_selected .row > *
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review .author
+    {
+        font-size: 18px;
+    }
+
+
+    .reviews .review .rating .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .reviews .review .product
+    {
+        font-size: 18px;
+
+        margin-top: 20px;
+        padding: 11px;
+    }
+
+
+    .reviews .review .product .thumb
+    {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .reviews .review .product .name
+    {
+        width: calc(100% - 106px);
+    }
+
+
+    .reviews .review .pluses .label,
+    .reviews .review .minuses .label,
+    .reviews .review .text .label
+    {
+        font-size: 18px;
+
+        padding-left: 32px;
+    }
+
+
+    .reviews .review .pluses .text_block,
+    .reviews .review .minuses .text_block,
+    .reviews .review .text .text_block
+    {
+        padding-left: 32px;
+    }
+
+
+    .reviews .review .link
+    {
+        font-size: 18px;
+
+        margin-top: 20px;
+        padding-left: 32px;
     }
 
 

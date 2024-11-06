@@ -308,6 +308,14 @@
     }
 
 
+    .text_block .spoler_btn
+    {
+        font-size: 16px;
+
+        padding-top: 16px;
+    }
+
+
 
     /*------------
         Brands
@@ -682,6 +690,25 @@
     /*--------------
         Products
     --------------*/
+    .products .sort
+    {
+        display: none;
+    }
+
+
+    .products .mob_head,
+    .products .mob_filter_btn
+    {
+        display: flex;
+    }
+
+
+    .products .mob_sort
+    {
+        display: block;
+    }
+
+
     .products .row
     {
         --count: 3;
@@ -2014,6 +2041,112 @@
     .pluses_minuses ul li:before
     {
         top: 12px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .category_name
+    {
+        font-size: 28px;
+    }
+
+
+    .category_info .head .count
+    {
+        font-size: 16px;
+    }
+
+
+
+    .category_info .filter_selected
+    {
+        display: none;
+    }
+
+
+
+    .category_info .mob_categories
+    {
+        display: block;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review .author
+    {
+        font-size: 16px;
+    }
+
+
+    .reviews .review .rating .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .reviews .review .product
+    {
+        font-size: 16px;
+
+        padding: 11px;
+    }
+
+
+    .reviews .review .product .thumb
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .reviews .review .product .name
+    {
+        width: calc(100% - 96px);
+    }
+
+
+    .reviews .review .pluses .label,
+    .reviews .review .minuses .label,
+    .reviews .review .text .label
+    {
+        font-size: 16px;
+
+        padding-left: 28px;
+    }
+
+
+    .reviews .review .pluses .text_block,
+    .reviews .review .minuses .text_block,
+    .reviews .review .text .text_block
+    {
+        padding-left: 28px;
+    }
+
+
+    .reviews .review .pluses .label:before,
+    .reviews .review .minuses .label:before
+    {
+        top: 10px;
+    }
+
+    .reviews .review .pluses .label:after
+    {
+        top: 4px;
+    }
+
+
+    .reviews .review .link
+    {
+        font-size: 16px;
+
+        padding-left: 28px;
     }
 
 

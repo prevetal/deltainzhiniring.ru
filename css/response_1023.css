@@ -1129,6 +1129,26 @@
 
 
 
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .mob_categories .category
+    {
+        min-height: 108px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

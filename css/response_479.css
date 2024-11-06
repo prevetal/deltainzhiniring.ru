@@ -274,6 +274,12 @@
     }
 
 
+    .text_block .spoler_btn
+    {
+        font-size: 12px;
+    }
+
+
 
     /*------------
         Brands
@@ -1995,6 +2001,131 @@
         left: 5px;
 
         height: 12px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .category_name:before
+    {
+        width: 60px;
+    }
+
+
+    .category_info .head .count
+    {
+        font-size: 12px;
+    }
+
+
+
+    .category_info .mob_categories .category
+    {
+        min-height: 80px;
+    }
+
+
+    .category_info .mob_categories .category .thumb
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .category_info .mob_categories .category .name
+    {
+        font-size: 12px;
+
+        width: calc(100% - 76px);
+    }
+
+
+    .category_info .mob_categories .category .count
+    {
+        bottom: 15px;
+        left: 87px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review .author
+    {
+        font-size: 12px;
+    }
+
+
+    .reviews .review .author .icon
+    {
+        width: 17px;
+        height: 16px;
+    }
+
+
+    .reviews .review .rating
+    {
+        margin-left: 12px;
+    }
+
+
+    .reviews .review .rating .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .reviews .review .product
+    {
+        font-size: 12px;
+
+        border-radius: 6px;
+    }
+
+
+    .reviews .review .product .thumb
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .reviews .review .product .name
+    {
+        width: calc(100% - 76px);
+    }
+
+
+    .reviews .review .pluses .label,
+    .reviews .review .minuses .label,
+    .reviews .review .text .label
+    {
+        font-size: 14px;
+    }
+
+
+    .reviews .review .pluses .label:before,
+    .reviews .review .minuses .label:before
+    {
+        top: 9px;
+    }
+
+
+    .reviews .review .pluses .label:after
+    {
+        top: 3px;
+    }
+
+
+    .reviews .review .link
+    {
+        font-size: 12px;
+
+        margin-top: 16px;
     }
 
 

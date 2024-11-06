@@ -340,6 +340,14 @@
     }
 
 
+    .text_block .spoler_btn
+    {
+        font-size: 14px;
+
+        padding-top: 12px;
+    }
+
+
 
     /*------------
         Brands
@@ -2529,6 +2537,140 @@
     .pluses_minuses .pluses ul li:after
     {
         top: 3px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .head
+    {
+        flex-wrap: wrap;
+
+        margin-bottom: 20px;
+    }
+
+
+    .category_info .category_name
+    {
+        font-size: 24px;
+    }
+
+
+    .category_info .category_name:before
+    {
+        width: 80px;
+        height: 2px;
+    }
+
+
+    .category_info .head .count
+    {
+        font-size: 14px;
+
+        width: 100%;
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+
+    .category_info .mob_categories .category
+    {
+        min-height: 100px;
+        padding: 11px;
+    }
+
+
+    .category_info .mob_categories .category .thumb
+    {
+        width: 72px;
+        height: 72px;
+    }
+
+
+    .category_info .mob_categories .category .name
+    {
+        font-size: 14px;
+
+        width: calc(100% - 88px);
+    }
+
+
+    .category_info .mob_categories .category .count
+    {
+        left: 99px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .row
+    {
+        margin-left: 0;
+    }
+
+
+    .reviews .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .reviews .review .author
+    {
+        font-size: 14px;
+    }
+
+
+    .reviews .review .author .icon
+    {
+        width: 21px;
+        height: 20px;
+        margin-right: 8px;
+    }
+
+
+    .reviews .review .rating
+    {
+        margin-left: 16px;
+    }
+
+
+    .reviews .review .product
+    {
+        font-size: 14px;
+    }
+
+
+    .reviews .review .product .thumb
+    {
+        width: 72px;
+        height: 71px;
+    }
+
+
+    .reviews .review .product .name
+    {
+        width: calc(100% - 88px);
+    }
+
+
+    .reviews .review .pluses,
+    .reviews .review .minuses,
+    .reviews .review .text
+    {
+        margin-top: 20px;
+    }
+
+
+    .reviews .review .link
+    {
+        font-size: 14px;
     }
 
 

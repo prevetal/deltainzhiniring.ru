@@ -966,7 +966,7 @@
 
 				<section class="category_info block big_m content_flex">
 					<div class="cont row">
-						<aside>
+						<aside class="mob_hide">
 							<form action="" class="form filter">
 								<div class="item">
 									<div class="name">
@@ -1319,6 +1319,19 @@
 							</section>
 
 
+							<section class="mob_categories">
+								<a href="/" class="category">
+									<div class="thumb">
+										<img src="images/tmp/equipment_thumb1.jpg" alt="" loading="lazy">
+									</div>
+
+									<div class="name">Рохли с увеличенной грузоподъемностью</div>
+
+									<div class="count">16 товаров</div>
+								</a>
+							</section>
+
+
 							<section class="products">
 								<div class="sort">
 									<button class="btn active">
@@ -1348,6 +1361,24 @@
 									<button class="btn">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_sort_new"></use></svg>
 										<span>Новинки</span>
+									</button>
+								</div>
+
+								<div class="mob_head">
+									<div class="mob_sort">
+										<select name="" data-placeholder="Сортировка">
+											<option value="1">Вариант 1</option>
+											<option value="2">Вариант 2</option>
+											<option value="3">Вариант 3</option>
+											<option value="4">Вариант 4</option>
+										</select>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+									</div>
+
+									<button class="mob_filter_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_filter"></use></svg>
+										<span>Фильтр</span>
 									</button>
 								</div>
 
@@ -1978,19 +2009,19 @@
 								</div>
 
 								<div class="pagination">
-									<a href="/" class="prev">
+									<a href="/" class="prev mob_hide">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 									</a>
 
 									<a class="active">1</a>
 									<a href="/">2</a>
 									<a href="/">3</a>
-									<a href="/">4</a>
-									<a href="/">5</a>
+									<a href="/" class="mob_hide">4</a>
+									<a href="/" class="mob_hide">5</a>
 									<div class="sep">...</div>
 									<a href="/">70</a>
 
-									<a href="/" class="next">
+									<a href="/" class="next mob_hide">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 									</a>
 								</div>
@@ -2775,7 +2806,7 @@
 		</div>
 
 
-		
+
 
 
 		<section class="modal" id="city_modal">

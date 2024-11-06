@@ -318,21 +318,21 @@ document.addEventListener('DOMContentLoaded', function () {
 				prevEl: '.swiper-button-prev'
 			},
 			lazy: true,
+			spaceBetween: 13,
 			breakpoints: {
 				0: {
-					spaceBetween: 12,
-					slidesPerView: 'auto'
-				},
-				480: {
-					spaceBetween: 12,
 					slidesPerView: 2
 				},
-				768: {
-					spaceBetween: 12,
+				480: {
 					slidesPerView: 3
 				},
+				768: {
+					slidesPerView: 4
+				},
+				1024: {
+					slidesPerView: 6
+				},
 				1280: {
-					spaceBetween: 13,
 					slidesPerView: 8
 				}
 			}
