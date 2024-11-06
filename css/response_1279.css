@@ -19,6 +19,12 @@
     }
 
 
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
     .cont
     {
         padding: 0 20px;
@@ -102,13 +108,6 @@
     {
         display: none;
     }
-
-
-
-    /*----------
-        Tabs
-    ----------*/
-
 
 
 
@@ -222,6 +221,16 @@
 
 
 
+    /*-------------
+        Sidebar
+    -------------*/
+    aside.mob_hide
+    {
+        display: none;
+    }
+
+
+
     /*------------------
         Form elements
     ------------------*/
@@ -262,6 +271,12 @@
         font-size: 20px;
     }
 
+    .text_block h3
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
 
     .text_block .columns
     {
@@ -284,6 +299,12 @@
     .text_block .cols .col
     {
         width: calc(50% - 20px);
+    }
+
+
+    .text_block table th
+    {
+        font-size: 16px;
     }
 
 
@@ -1900,6 +1921,99 @@
     .compare_info .categories .category .name
     {
         font-size: 16px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .stock .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*----------------
+        Stock info
+    ----------------*/
+    .stock_info .finish_date
+    {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+
+    .stock_info .finish_date .val
+    {
+        width: 140px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        min-height: 280px;
+        padding: 24px;
+    }
+
+
+    .article_info .head .title
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*--------------------
+        Pluses/minuses
+    --------------------*/
+    .pluses_minuses > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .pluses_minuses .title
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        padding-left: 32px;
+    }
+
+
+    .pluses_minuses ul li
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        padding-left: 32px;
+    }
+
+
+    .pluses_minuses .pluses ul li:after
+    {
+        top: 5px;
+    }
+
+    .pluses_minuses ul li:before
+    {
+        top: 12px;
     }
 
 

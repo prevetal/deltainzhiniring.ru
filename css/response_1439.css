@@ -283,6 +283,12 @@
         font-size: 22px;
     }
 
+    .text_block h3
+    {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
 
     .text_block .columns
     {
@@ -293,6 +299,26 @@
     .text_block .cols .col
     {
         width: calc(50% - 24px);
+    }
+
+
+    .text_block table th
+    {
+        font-size: 18px;
+
+        padding: 12px 20px;
+    }
+
+
+    .text_block table td
+    {
+        padding: 12px 20px;
+    }
+
+
+    .text_block .image_block .data > * + *
+    {
+        margin-top: 24px;
     }
 
 
@@ -1593,6 +1619,245 @@
     .compare_info .categories .category .count
     {
         left: 111px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .categories .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px 20px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .stocks .categories .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .stocks .categories .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .stocks .categories .row > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+
+    .stocks .stock .thumb
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .stocks .stock .name
+    {
+        font-size: 20px;
+    }
+
+
+    .stocks .stock .bottom
+    {
+        padding-top: 20px;
+    }
+
+
+
+    /*----------------
+        Stock info
+    ----------------*/
+    .stock_info .finish_date
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .stock_info .finish_date .val
+    {
+        width: 160px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .categories .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px 20px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .articles .categories .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .articles .categories .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .articles .categories .row > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+
+    .articles .article .thumb
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 20px;
+    }
+
+
+    .articles .article .bottom
+    {
+        padding-top: 20px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        min-height: 340px;
+        margin-bottom: 40px;
+        padding: 40px;
+    }
+
+
+    .article_info .head .title
+    {
+        font-size: 22px;
+    }
+
+
+    .article_info .content > * + *
+    {
+        margin-top: 60px;
+    }
+
+
+
+    /*--------------------
+        Pluses/minuses
+    --------------------*/
+    .pluses_minuses > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .pluses_minuses .title
+    {
+        font-size: 18px;
+        line-height: 28px;
+
+        padding-left: 40px;
+    }
+
+
+    .pluses_minuses ul li
+    {
+        font-size: 18px;
+        line-height: 28px;
+
+        padding-left: 40px;
+    }
+
+
+    .pluses_minuses .pluses ul li:after
+    {
+        top: 7px;
+    }
+
+    .pluses_minuses ul li:before
+    {
+        top: 14px;
+    }
+
+
+
+    /*-------------
+        Anchors
+    -------------*/
+    .anchors
+    {
+        top: 81px;
+
+        padding: 15px 15px 19px;
+    }
+
+
+    .anchors .title
+    {
+        font-size: 18px;
+        line-height: 28px;
     }
 
 

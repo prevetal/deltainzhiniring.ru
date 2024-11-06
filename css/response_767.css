@@ -262,6 +262,76 @@
     }
 
 
+    .text_block .table_wrap
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin: 24px -20px;
+    }
+
+
+    .text_block table
+    {
+        width: 960px;
+    }
+
+
+    .text_block table th
+    {
+        font-size: 14px;
+
+        padding: 8px 20px;
+    }
+
+
+    .text_block table td
+    {
+        padding: 8px 20px;
+    }
+
+
+    .text_block p.point
+    {
+        line-height: 22px;
+
+        padding-left: 24px;
+    }
+
+    .text_block p.point:before
+    {
+        top: 7px;
+
+        width: 8px;
+        height: 8px;
+    }
+
+
+    .text_block .image_block
+    {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+
+    .text_block .image_block .data
+    {
+        width: 100%;
+    }
+
+
+    .text_block .image_block .data > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .text_block .image_block img
+    {
+        width: 200px;
+        margin: 32px auto 0;
+    }
+
+
 
     /*------------
         Brands
@@ -462,13 +532,15 @@
     /*--------------
         Products
     --------------*/
-    .products .row
+    .products .row,
+    .content .products .row
     {
         margin-bottom: -13px;
     }
 
 
-    .products .row > *
+    .products .row > *,
+    .content .products .row > *
     {
         width: calc(50% - 13px);
         margin-bottom: 13px;
@@ -2328,6 +2400,127 @@
     .compare_info .categories .category .count
     {
         left: 99px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .grid > *
+    {
+        width: calc(50% - 13px);
+    }
+
+
+    .stocks .stock .thumb
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .stocks .stock .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*----------------
+        Stock info
+    ----------------*/
+    .stock_info .finish_date
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        position: relative;
+        right: 0;
+        bottom: 0;
+
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .stock_info .finish_date .val
+    {
+        width: 120px;
+        height: 20px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid > *
+    {
+        width: calc(50% - 13px);
+    }
+
+
+    .articles .article .thumb
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        min-height: 200px;
+        padding: 20px;
+    }
+
+
+    .article_info .head .title
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*--------------------
+        Pluses/minuses
+    --------------------*/
+    .pluses_minuses > *
+    {
+        width: 100%;
+    }
+
+    .pluses_minuses > * + *
+    {
+        margin-top: 32px;
+    }
+
+
+    .pluses_minuses ul li
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding-left: 28px;
+    }
+
+
+    .pluses_minuses ul li:before
+    {
+        top: 10px;
+    }
+
+    .pluses_minuses .pluses ul li:after
+    {
+        top: 3px;
     }
 
 

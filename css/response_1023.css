@@ -162,14 +162,16 @@
     }
 
 
-    .products .row
+    .products .row,
+    .content .products .row
     {
         margin-bottom: -28px;
         margin-left: -13px;
     }
 
 
-    .products .row > *
+    .products .row > *,
+    .content .products .row > *
     {
         width: calc(33.333% - 13px);
         margin-bottom: 28px;
@@ -1092,6 +1094,37 @@
     .compare_info .categories .category
     {
         min-height: 108px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .grid > *
+    {
+        width: calc(33.333% - 13px);
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid > *
+    {
+        width: calc(33.333% - 13px);
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        min-height: 240px;
+        margin-bottom: 24px;
     }
 
 
