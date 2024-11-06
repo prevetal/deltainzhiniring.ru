@@ -3142,10 +3142,19 @@
 		</section>
 
 
+		
+
+
 		<section class="modal" id="city_modal">
 			<div class="modal_title">Работаем по всей России<br> Выберите свой город</div>
 
-			<div class="mob_modal_title">Выбор города</div>
+			<div class="mob_modal_title">
+				Выбор города
+
+				<button class="close_btn">
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+				</button>
+			</div>
 
 			<form action="" class="search">
 				<input type="text" name="" value="" class="input" placeholder="Введите название города">
@@ -3281,43 +3290,14 @@
 		</section>
 
 
-		<section class="modal" id="quike_order_modal">
-			<div class="modal_title">Быстрый заказ</div>
-
-			<div class="modal_desc">Обратите внимание что мы осуществляем<br> звонок с номера <b>+7 (800) 200 66 15</b></div>
-
-			<form action="" class="form">
-				<div class="line">
-					<div class="field">
-						<input type="text" name="" value="" class="input" placeholder="Введите ваше имя">
-					</div>
-				</div>
-
-				<div class="line">
-					<div class="field">
-						<input type="tel" name="" value="" class="input" placeholder="+7 (___)___-__-__">
-					</div>
-				</div>
-
-				<div class="line agree">
-					<label class="toggle_checkbox">
-						<input type="checkbox" name="agree" checked>
-
-						<div class="check"></div>
-
-						<div>Я согласен на обработку <a href="/" target="_blank">персональных данных</a></div>
-					</label>
-				</div>
-
-				<div class="submit">
-					<button type="submit" class="submit_btn">Оформить заказ</button>
-				</div>
-			</form>
-		</section>
-
-
 		<section class="modal" id="mob_phone_modal">
-			<div class="mob_modal_title">Позвоните нам</div>
+			<div class="mob_modal_title">
+				Позвоните нам
+
+				<button class="close_btn">
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+				</button>
+			</div>
 
 			<div class="city">
 				Ваш город: <button class="btn modal_btn" data-modal="city_modal">Челябинск</button>
@@ -3365,7 +3345,13 @@
 
 
 		<section class="modal" id="mob_contacts_modal">
-			<div class="mob_modal_title">Напишите нам</div>
+			<div class="mob_modal_title">
+				Напишите нам
+
+				<button class="close_btn">
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+				</button>
+			</div>
 
 			<div class="city">
 				Ваш город: <button class="btn modal_btn" data-modal="city_modal">Челябинск</button>
@@ -3424,14 +3410,20 @@
 
 
 		<section class="modal" id="mob_catalog_modal">
-			<div class="mob_modal_title">Каталог</div>
+			<div class="mob_modal_title">
+				Каталог
+
+				<button class="close_btn">
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+				</button>
+			</div>
 
 			<form action="" class="search">
 				<input type="text" name="" value="" class="input" placeholder="Поиск по товару, категории или артикулу">
 			</form>
 
 			<div class="links">
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog1.png" alt="" loading="lazy">
 					</div>
@@ -3441,7 +3433,7 @@
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
 
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog2.png" alt="" loading="lazy">
 					</div>
@@ -3451,7 +3443,7 @@
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
 
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog3.png" alt="" loading="lazy">
 					</div>
@@ -3461,7 +3453,7 @@
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
 
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog4.png" alt="" loading="lazy">
 					</div>
@@ -3471,7 +3463,7 @@
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
 
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog5.png" alt="" loading="lazy">
 					</div>
@@ -3481,7 +3473,7 @@
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
 
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog6.png" alt="" loading="lazy">
 					</div>
@@ -3491,7 +3483,7 @@
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
 
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog7.png" alt="" loading="lazy">
 					</div>
@@ -3501,7 +3493,7 @@
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
 
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog8.png" alt="" loading="lazy">
 					</div>
@@ -3511,7 +3503,7 @@
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
 
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog9.png" alt="" loading="lazy">
 					</div>
@@ -3521,7 +3513,7 @@
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
 
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog10.png" alt="" loading="lazy">
 					</div>
@@ -3531,7 +3523,7 @@
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
 
-				<div><a href="/">
+				<div><a href="/" class="sub_link" data-sub="sub1">
 					<div class="icon">
 						<img src="images/tmp/ic_mob_catalog11.png" alt="" loading="lazy">
 					</div>
@@ -3540,6 +3532,112 @@
 
 					<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 				</a></div>
+			</div>
+
+
+			<div class="sub sub1">
+				<div class="head">
+					<div class="title">Оборудование для обустройства дорог и парковок</div>
+
+					<button class="close_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+				</div>
+
+				<div class="link">
+					<a href="/">Перейти в категорию</a>
+				</div>
+
+				<div class="links">
+					<div><a href="/" class="sub_link" data-sub="sub1_1">
+						<span>Грузоподъёмное оборудование</span>
+
+						<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+					</a></div>
+
+					<div><a href="/">
+						<span>Станки</span>
+					</a></div>
+
+					<div><a href="/" class="sub_link" data-sub="sub1_2">
+						<span>Строительное оборудование</span>
+
+						<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+					</a></div>
+
+					<div><a href="/" class="sub_link" data-sub="sub1_3">
+						<span>Окрасочное оборудование</span>
+
+						<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+					</a></div>
+
+					<div><a href="/">
+						<span>Генераторы и электростанции</span>
+					</a></div>
+
+					<div><a href="/" class="sub_link" data-sub="sub1_4">
+						<span>Компрессоры воздушные</span>
+
+						<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+					</a></div>
+
+					<div><a href="/">
+						<span>Сварочное оборудование</span>
+					</a></div>
+
+					<div><a href="/">
+						<span>Пневматический инструмент</span>
+					</a></div>
+
+					<div><a href="/">
+						<span>Профессиональное оборудование для общепита</span>
+					</a></div>
+
+					<div><a href="/">
+						<span>Упаковочное и фасовочное оборудование</span>
+					</a></div>
+
+					<div><a href="/">
+						<span>Материалы для гидроизоляции деформационных швов</span>
+					</a></div>
+
+					<div><a href="/">
+						<span>Оборудование для обустройства дорог и парковок</span>
+					</a></div>
+				</div>
+			</div>
+
+
+			<div class="sub sub1_1">
+				<div class="head">
+					<div class="title">Оборудование для обустройства дорог и парковок</div>
+
+					<button class="close_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+				</div>
+
+				<div class="link">
+					<a href="/">Перейти в категорию</a>
+				</div>
+
+				<div class="links">
+					<div><a href="/">
+						<span>Вариант 1</span>
+					</a></div>
+
+					<div><a href="/">
+						<span>Вариант 2</span>
+					</a></div>
+
+					<div><a href="/">
+						<span>Вариант 3</span>
+					</a></div>
+
+					<div><a href="/">
+						<span>Вариант 4</span>
+					</a></div>
+				</div>
 			</div>
 		</section>
 

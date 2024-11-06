@@ -54,6 +54,8 @@
         top: 15px;
         right: 13px;
 
+        display: none;
+
         opacity: 1;
 
         --f-button-width: 19px;
@@ -2589,6 +2591,7 @@
     -----------*/
     .modal
     {
+        overflow: hidden;
         flex: 1 0 auto;
 
         width: 100%;
@@ -2603,6 +2606,7 @@
     {
         display: none;
     }
+
 
     .mob_modal_title
     {

@@ -13550,12 +13550,40 @@ footer .bottom
 
     display: none;
 
-    padding: 12px;
+    padding: 12px 52px;
 
     text-align: center;
 
     color: #fff;
     background: #16646b;
+}
+
+
+.mob_modal_title .close_btn
+{
+    position: absolute;
+    top: 15px;
+    right: 13px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 19px;
+    height: 19px;
+
+    color: #fff;
+}
+
+
+.mob_modal_title .close_btn .icon
+{
+    display: block;
+
+    width: 19px;
+    height: 19px;
 }
 
 
@@ -14426,4 +14454,118 @@ footer .bottom
     transform: rotate(90deg);
 
     color: #19666d;
+}
+
+
+
+#mob_catalog_modal .sub
+{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 100%;
+
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height:         fill-available;
+
+    transition: transform .25s linear;
+
+    background: var(--bg);
+
+    overscroll-behavior-y: contain;
+}
+
+
+#mob_catalog_modal .sub.show
+{
+    transform: translateX(-100%);
+}
+
+
+#mob_catalog_modal .sub .head
+{
+    font-size: 16px;
+    line-height: 20px;
+
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 48px;
+    padding: 4px 52px;
+
+    color: #fff;
+    background: #16646b;
+}
+
+
+#mob_catalog_modal .sub .head .title
+{
+    width: 100%;
+}
+
+
+#mob_catalog_modal .sub .close_btn
+{
+    position: absolute;
+    top: 15px;
+    right: 13px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 19px;
+    height: 19px;
+
+    color: #fff;
+}
+
+
+#mob_catalog_modal .sub .close_btn .icon
+{
+    display: block;
+
+    width: 19px;
+    height: 19px;
+}
+
+
+#mob_catalog_modal .sub .link
+{
+    font-size: 14px;
+    line-height: 100%;
+
+    padding: 20px 13px;
+
+    text-align: center;
+
+    color: #16646b;
+}
+
+
+#mob_catalog_modal .sub .link a
+{
+    text-decoration: none;
+
+    color: currentColor;
+    border-bottom: 1px dotted;
+}
+
+
+#mob_catalog_modal .sub .links a
+{
+    font-size: 14px;
 }

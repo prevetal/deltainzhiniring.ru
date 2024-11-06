@@ -400,6 +400,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		}])
 	})
 
+	$('.modal .mob_modal_title .close_btn').click(function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
+	})
+
 
 	// Zoom images
 	Fancybox.bind('.fancy_img', {
@@ -918,6 +924,24 @@ document.addEventListener('DOMContentLoaded', function () {
 			el.addEventListener('change', () => el.classList.add('selected'))
 		})
 	}
+
+
+	// Mob. catalog
+	$('#mob_catalog_modal .links a.sub_link').click(function(e) {
+		e.preventDefault()
+
+		let sub = $(this).data('sub')
+
+		$('#mob_catalog_modal .' + sub).addClass('show')
+	})
+
+	$('#mob_catalog_modal .sub .close_btn').click(function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.sub')
+
+		parent.removeClass('show')
+	})
 })
 
 
