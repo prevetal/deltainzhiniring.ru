@@ -966,7 +966,15 @@
 
 				<section class="category_info block big_m content_flex">
 					<div class="cont row">
-						<aside class="mob_hide">
+						<aside class="mob_hide" id="mob_filter">
+							<div class="mob_modal_title">
+								Фильтр
+
+								<button class="close_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+								</button>
+							</div>
+
 							<form action="" class="form filter">
 								<div class="item">
 									<div class="name">
@@ -1188,7 +1196,61 @@
 									</div>
 								</div>
 
+
+								<div class="filter_selected">
+									<div class="section">
+										<div class="row">
+											<button type="button" class="btn">
+												<span>Цена: от 50 000 до 999 999</span>
+
+												<div class="icon">
+													<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+												</div>
+											</button>
+
+											<button type="button" class="btn">
+												<span>В наличии</span>
+
+												<div class="icon">
+													<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+												</div>
+											</button>
+										</div>
+									</div>
+
+									<div class="section">
+										<div class="label">Производитель:</div>
+
+										<div class="row">
+											<button type="button" class="btn">
+												<span>Smartlift</span>
+
+												<div class="icon">
+													<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+												</div>
+											</button>
+										</div>
+									</div>
+
+									<div class="section">
+										<div class="label">Емкость батереи, В/Ач:</div>
+
+										<div class="row">
+											<button type="button" class="btn">
+												<span>12/120</span>
+
+												<div class="icon">
+													<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+												</div>
+											</button>
+										</div>
+									</div>
+								</div>
+
+
 								<button type="reset" class="filter_reset_btn">Сбросить фильтры</button>
+
+								<button type="submit" class="submit_btn">Показать 999 товаров</button>
 							</form>
 
 
@@ -1376,7 +1438,7 @@
 										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 									</div>
 
-									<button class="mob_filter_btn">
+									<button class="mob_filter_btn modal_btn" data-modal="mob_filter">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_filter"></use></svg>
 										<span>Фильтр</span>
 									</button>
@@ -2804,9 +2866,6 @@
 				</a></div>
 			</section>
 		</div>
-
-
-
 
 
 		<section class="modal" id="city_modal">

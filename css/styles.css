@@ -2140,6 +2140,8 @@ aside .filter .name
     font-weight: 600;
     line-height: 100%;
 
+    position: relative;
+
     display: flex;
     align-content: center;
     align-items: center;
@@ -2451,6 +2453,151 @@ aside .filter .spoler_btn.active span + span
 }
 
 
+aside .filter .filter_selected
+{
+    display: none;
+
+    margin-top: 24px;
+}
+
+
+aside .filter .filter_selected .section + .section
+{
+    margin-top: 12px;
+}
+
+
+aside .filter .filter_selected .label
+{
+    font-size: 14px;
+
+    margin-bottom: 12px;
+
+    color: #686868;
+}
+
+
+aside .filter .filter_selected .row
+{
+    display: block;
+    overflow: auto;
+
+    width: calc(100% + 4rem);
+    margin: 0 -2rem;
+    padding: 0 2rem;
+
+    white-space: nowrap;
+
+    scroll-padding: 0 2rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: transparent transparent !important;
+    scrollbar-width: thin !important;
+}
+
+
+aside .filter .filter_selected .row::-webkit-scrollbar
+{
+    display: none !important;
+
+    width: 0 !important;
+    height: 0 !important;
+
+    background-color: transparent !important;
+}
+
+
+aside .filter .filter_selected .row::-webkit-scrollbar-thumb
+{
+    background-color: transparent !important;
+}
+
+
+aside .filter .filter_selected .row > *
+{
+    display: inline-block;
+
+    max-width: none;
+    margin: 0;
+
+    vertical-align: top;
+
+    scroll-snap-align: start;
+}
+
+
+aside .filter .filter_selected .row > * + *
+{
+    margin-left: 16px;
+}
+
+
+aside .filter .filter_selected .btn
+{
+    font-size: 14px;
+    line-height: 48px;
+
+    position: relative;
+
+    height: 48px;
+    padding: 0 23px 0 17px;
+
+    transition: background .2s linear;
+    white-space: nowrap;
+
+    color: #fff;
+    border-radius: 10px;
+    background: #16646b;
+}
+
+
+aside .filter .filter_selected .btn .icon
+{
+    position: absolute;
+    top: 0;
+    right: -12px;
+    bottom: 0;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+    margin: auto 0;
+
+    transition: .2s linear;
+
+    color: #16646b;
+    border: 1px solid #16646b;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+aside .filter .filter_selected .btn .icon svg
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+}
+
+
+aside .filter .filter_selected .btn:hover
+{
+    background: #38a1ab;
+}
+
+
+aside .filter .filter_selected .btn:hover .icon
+{
+    color: #38a1ab;
+    border-color: #38a1ab;
+}
+
+
 aside .filter .filter_reset_btn
 {
     font-size: 20px;
@@ -2475,6 +2622,17 @@ aside .filter .filter_reset_btn:hover
     color: #fff;
     border-color: #38a0ab;
     background: #38a0ab;
+}
+
+
+aside .filter .submit_btn
+{
+    font-size: 14px;
+
+    display: none;
+
+    width: 100%;
+    margin-top: 28px;
 }
 
 
@@ -12845,7 +13003,7 @@ aside .links a.active
 .cookie
 {
     position: fixed;
-    z-index: 20;
+    z-index: 1111;
     bottom: 0;
     left: 0;
 

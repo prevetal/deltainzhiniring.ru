@@ -133,6 +133,24 @@
 
 
 
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .filter .tooltip
+    {
+        position: static;
+    }
+
+
+    aside .filter .tooltip .text
+    {
+        left: 0;
+
+        width: 100%;
+    }
+
+
+
     /*------------------
         Form elements
     ------------------*/

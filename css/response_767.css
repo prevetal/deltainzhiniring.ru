@@ -137,6 +137,72 @@
 
 
 
+    /*-------------
+        Sidebar
+    -------------*/
+    aside.fancybox__content
+    {
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 0;
+
+        background: var(--bg);
+    }
+
+
+    aside > * + *
+    {
+        margin: 0;
+    }
+
+
+
+    aside .filter
+    {
+        flex: 1 0 auto;
+
+        padding: 20px 13px;
+
+        background: var(--bg);
+    }
+
+
+
+    aside .filter .tooltip
+    {
+        top: 0;
+    }
+
+
+    aside .filter .tooltip .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    aside .filter .tooltip .text
+    {
+        width: 240px;
+        padding: 11px;
+
+        box-shadow: 0 32px 32px rgba(0, 0, 0, .34);
+    }
+
+
+    aside .filter .filter_selected .row
+    {
+        width: calc(100% + 26px);
+        margin: 0 -13px;
+        padding: 0 13px;
+
+        scroll-padding: 0 13px;
+    }
+
+
+
     /*------------------
         Form elements
     ------------------*/

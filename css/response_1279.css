@@ -65,7 +65,8 @@
     /*--------------
         Fancybox
     --------------*/
-    .fancybox__slide
+    .fancybox__slide,
+    .fancybox__container:not(.is-compact) .fancybox__slide.has-close-btn
     {
         padding: 32px;
     }
@@ -224,9 +225,60 @@
     /*-------------
         Sidebar
     -------------*/
-    aside.mob_hide
+    aside.mob_hide,
+    aside .links
     {
         display: none;
+    }
+
+
+
+    aside .filter .name,
+    aside .filter .toggle_checkbox
+    {
+        font-size: 16px;
+    }
+
+
+    aside .filter .range .input
+    {
+        font-size: 16px;
+    }
+
+
+    aside .filter .irs
+    {
+        margin-top: 24px;
+    }
+
+
+    aside .filter .checkbox
+    {
+        font-size: 16px;
+    }
+
+
+    aside .filter .spoler_btn
+    {
+        font-size: 16px;
+    }
+
+
+    aside .filter .filter_selected
+    {
+        display: block;
+    }
+
+
+    aside .filter .filter_reset_btn
+    {
+        display: none;
+    }
+
+
+    aside .filter .submit_btn
+    {
+        display: block;
     }
 
 

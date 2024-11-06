@@ -400,7 +400,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		}])
 	})
 
-	$('.modal .mob_modal_title .close_btn').click(function(e) {
+	$('.mob_modal_title .close_btn').click(function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
+	})
+
+
+	$('body').on('click', '.fancybox__backdrop', function (e) {
 		e.preventDefault()
 
 		Fancybox.close()

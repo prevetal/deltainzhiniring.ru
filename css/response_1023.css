@@ -26,7 +26,8 @@
     /*--------------
         Fancybox
     --------------*/
-    .fancybox__slide
+    .fancybox__slide,
+    .fancybox__container:not(.is-compact) .fancybox__slide.has-close-btn
     {
         padding: 24px;
     }
