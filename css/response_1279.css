@@ -2248,6 +2248,14 @@
     /*-------------
         Reviews
     -------------*/
+    .reviews .add_btn
+    {
+        font-size: 16px;
+
+        margin-left: 40px;
+    }
+
+
     .reviews .review .author
     {
         font-size: 16px;
@@ -2317,6 +2325,216 @@
         font-size: 16px;
 
         padding-left: 28px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .product_name
+    {
+        width: calc(100% - 424px);
+    }
+
+
+
+    .product_info .brand
+    {
+        width: 400px;
+    }
+
+
+    .product_info .brand .offical
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+    .product_info .articul
+    {
+        font-size: 16px;
+
+        width: 116px;
+    }
+
+
+
+    .product_info .images
+    {
+        width: calc(100% - 424px);
+    }
+
+
+    .product_info .images .image
+    {
+        height: 416px;
+    }
+
+
+    .product_info .images .image .zoom
+    {
+        right: 24px;
+        bottom: 24px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .product_info .images .exp
+    {
+        font-size: 24px;
+    }
+
+
+    .product_info .images .thumbs
+    {
+        padding-right: 72px;
+    }
+
+
+    .product_info .images .swiper-button-next
+    {
+        right: -72px;
+    }
+
+
+
+    .product_info .mob_info
+    {
+        display: block;
+    }
+
+
+
+    .product_info .buy .status
+    {
+        font-size: 16px;
+
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+
+    .product_info .buy .price .currency
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .buy .buy_btn,
+    .product_info .buy .quike_buy_btn
+    {
+        font-size: 16px;
+    }
+
+
+
+    .product_info .main_features
+    {
+        display: none;
+
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .product_info .main_features .title
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .main_features .items > * + *
+    {
+        margin-top: 8px;
+    }
+
+
+
+    .product_info .description .title,
+    .product_info .features .title
+    {
+        font-size: 20px;
+    }
+
+
+    .product_info .features .sub_title
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .features .items > *
+    {
+        font-size: 16px;
+    }
+
+
+
+    .product_info .files .title
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .product_info .files .file
+    {
+        font-size: 16px;
+    }
+
+
+
+    .product_info aside
+    {
+        display: none;
+    }
+
+
+
+    /*------------------------
+        Fixed product info
+    ------------------------*/
+    .fixed_product_info .articul
+    {
+        font-size: 16px;
+
+        width: 100px;
+    }
+
+
+    .fixed_product_info .price
+    {
+        font-size: 24px;
+
+        width: 160px;
+    }
+
+
+    .fixed_product_info .price .currency
+    {
+        font-size: 16px;
+    }
+
+
+    .fixed_product_info .info
+    {
+        width: calc(100% - 458px);
+    }
+
+
+    .fixed_product_info .buy_btn
+    {
+        font-size: 20px;
+        font-size: 16px;
+
+        width: 180px;
+        height: 48px;
+        margin-left: 24px;
     }
 
 

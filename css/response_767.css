@@ -2830,6 +2830,22 @@
     /*-------------
         Reviews
     -------------*/
+    .reviews .add_btn
+    {
+        font-size: 14px;
+
+        margin-left: 32px;
+    }
+
+
+    .reviews .add_btn .icon
+    {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+
+
     .reviews .row
     {
         margin-left: 0;
@@ -2893,6 +2909,310 @@
     .reviews .review .link
     {
         font-size: 14px;
+    }
+
+
+
+    .reviews .list .review .pluses,
+    .reviews .list .review .minuses
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .product_name
+    {
+        font-size: 20px;
+    }
+
+
+    .product_info .articul
+    {
+        font-size: 14px;
+
+        width: 92px;
+    }
+
+
+
+    .product_info .favorite_btn .icon
+    {
+        width: 14px;
+        height: 19px;
+        margin-right: 0;
+    }
+
+
+    .product_info .compare_btn .icon
+    {
+        width: 16px;
+        height: 19px;
+        margin-right: 0;
+    }
+
+
+
+    .product_info .favorite_btn span,
+    .product_info .compare_btn span
+    {
+        display: none;
+    }
+
+
+
+    .product_info .rating
+    {
+        font-size: 12px;
+    }
+
+
+    .product_info .rating .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+
+    .product_info .images
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+    .product_info .images .swiper
+    {
+        padding-bottom: 24px;
+    }
+
+
+    .product_info .images .swiper-horizontal > .swiper-pagination-bullets,
+    .product_info .images .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .product_info .images .swiper-pagination-custom,
+    .product_info .images .swiper-pagination-fraction
+    {
+        display: flex;
+    }
+
+
+    .product_info .images .exp
+    {
+        font-size: 22px;
+    }
+
+
+    .product_info .images .image
+    {
+        height: 320px;
+    }
+
+
+    .product_info .images .image .zoom
+    {
+        right: 20px;
+        bottom: 20px;
+
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .product_info .images .thumbs
+    {
+        display: none;
+    }
+
+
+
+    .product_info .mob_info
+    {
+        width: 100%;
+    }
+
+
+    .product_info .buy
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .product_info .buy .status
+    {
+        font-size: 14px;
+
+        order: 2;
+
+        margin-bottom: 0;
+    }
+
+
+    .product_info .buy .price
+    {
+        font-size: 24px;
+
+        order: 1;
+    }
+
+
+    .product_info .buy .price .currency
+    {
+        font-size: 14px;
+    }
+
+
+    .product_info .buy .buy_btn,
+    .product_info .buy .quike_buy_btn
+    {
+        font-size: 14px;
+
+        order: 3;
+
+        width: 100%;
+
+        border-radius: 6px;
+    }
+
+
+    .product_info .buy .order
+    {
+        width: 100%;
+    }
+
+
+
+    .product_info .payment .title,
+    .product_info .delivery .title,
+    .product_info .warranty_returns .title,
+    .product_info .chart .title,
+    .product_info .articles .title
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .product_info .delivery .calc_btn
+    {
+        font-size: 16px;
+
+        margin-top: 20px;
+    }
+
+
+
+    .product_info .description .title,
+    .product_info .features .title
+    {
+        font-size: 18px;
+    }
+
+
+    .product_info .features .sub_title
+    {
+        font-size: 14px;
+    }
+
+
+    .product_info .features .items > *
+    {
+        font-size: 14px;
+    }
+
+
+    .product_info .features .val
+    {
+        width: auto;
+        min-width: auto;
+        margin-left: 4px;
+
+        white-space: nowrap;
+    }
+
+
+
+    .product_info .files .title
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    .product_info .files .file
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*----------------------
+        Small categories
+    ----------------------*/
+    .small_categories .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 20px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .small_categories .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .small_categories .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .small_categories .row > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+
+    .small_categories .row > * + *
+    {
+        margin-left: 8px;
+    }
+
+
+    .small_categories a
+    {
+        padding: 15px;
     }
 
 

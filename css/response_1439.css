@@ -2046,6 +2046,14 @@
     /*-------------
         Reviews
     -------------*/
+    .reviews .add_btn
+    {
+        font-size: 18px;
+
+        margin-left: 48px;
+    }
+
+
     .reviews .review .author
     {
         font-size: 18px;
@@ -2105,6 +2113,247 @@
 
         margin-top: 20px;
         padding-left: 32px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .content > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+
+    .product_info .product_name
+    {
+        font-size: 22px;
+
+        width: calc(100% - 444px);
+    }
+
+
+
+    .product_info .brand
+    {
+        width: 420px;
+    }
+
+
+    .product_info .brand .offical
+    {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+
+    .product_info .articul
+    {
+        font-size: 18px;
+        line-height: 20px;
+
+        width: 124px;
+        height: 22px;
+    }
+
+
+
+    .product_info .images
+    {
+        width: calc(100% - 444px);
+    }
+
+
+    .product_info .images .image
+    {
+        height: 468px;
+    }
+
+
+    .product_info .images .image .zoom
+    {
+        right: 32px;
+        bottom: 32px;
+
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .product_info .images .exp
+    {
+        font-size: 28px;
+    }
+
+
+    .product_info .images .thumbs
+    {
+        padding-right: 52px;
+    }
+
+
+    .product_info .images .thumbs .image
+    {
+        height: 80px;
+    }
+
+
+    .product_info .images .swiper-button-next
+    {
+        right: -52px;
+    }
+
+
+
+    .product_info .main_features
+    {
+        width: 420px;
+    }
+
+    .product_info .main_features .title
+    {
+        font-size: 18px;
+    }
+
+
+
+    .product_info .description .title,
+    .product_info .features .title
+    {
+        font-size: 22px;
+    }
+
+
+    .product_info .features .sub_title
+    {
+        font-size: 18px;
+    }
+
+
+    .product_info .features .items > *
+    {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+
+    .product_info .files .title
+    {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+    .product_info .files .file
+    {
+        font-size: 18px;
+    }
+
+
+
+    .product_info .buy .not_available .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    .product_info .buy .status
+    {
+        font-size: 18px;
+    }
+
+
+    .product_info .buy .price
+    {
+        font-size: 28px;
+    }
+
+
+    .product_info .buy .price .currency
+    {
+        font-size: 18px;
+    }
+
+
+    .product_info .buy .buy_btn
+    {
+        font-size: 18px;
+
+        height: 48px;
+        margin-top: 24px;
+    }
+
+
+    .product_info .buy .quike_buy_btn
+    {
+        font-size: 18px;
+
+        height: 48px;
+    }
+
+
+    .product_info .payment .title,
+    .product_info .delivery .title,
+    .product_info .warranty_returns .title,
+    .product_info .chart .title,
+    .product_info .articles .title
+    {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+
+    .product_info .delivery .calc_btn
+    {
+        font-size: 18px;
+
+        height: 48px;
+        margin-top: 24px;
+    }
+
+
+    .product_info .articles .article .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*------------------------
+        Fixed product info
+    ------------------------*/
+    .fixed_product_info .articul
+    {
+        font-size: 18px;
+        line-height: 20px;
+
+        width: 120px;
+        height: 22px;
+    }
+
+
+    .fixed_product_info .price
+    {
+        font-size: 28px;
+
+        width: 200px;
+    }
+
+
+    .fixed_product_info .price .currency
+    {
+        font-size: 18px;
+    }
+
+
+    .fixed_product_info .buy_btn
+    {
+        font-size: 18px;
     }
 
 

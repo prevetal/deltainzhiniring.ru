@@ -2252,6 +2252,14 @@
     /*-------------
         Reviews
     -------------*/
+    .reviews .add_btn
+    {
+        font-size: 12px;
+
+        margin-left: 28px;
+    }
+
+
     .reviews .review .author
     {
         font-size: 12px;
@@ -2325,6 +2333,93 @@
         font-size: 12px;
 
         margin-top: 16px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .product_name
+    {
+        font-size: 18px;
+    }
+
+
+    .product_info .articul
+    {
+        font-size: 12px;
+
+        width: 80px;
+    }
+
+
+    .product_info .images .image
+    {
+        height: 280px;
+    }
+
+
+
+    .product_info .buy .status
+    {
+        font-size: 12px;
+    }
+
+
+    .product_info .buy .price
+    {
+        font-size: 22px;
+
+        order: 1;
+
+        width: calc(100% - 120px);
+    }
+
+
+    .product_info .buy .price .currency
+    {
+        font-size: 12px;
+    }
+
+
+    .product_info .buy .price small
+    {
+        font-size: 10px;
+    }
+
+
+    .product_info .delivery .calc_btn
+    {
+        font-size: 14px;
+    }
+
+
+
+    .product_info .description .title,
+    .product_info .features .title
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .features .sub_title
+    {
+        font-size: 12px;
+    }
+
+
+    .product_info .features .items > *
+    {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+
+    .product_info .files .file
+    {
+        font-size: 12px;
+        line-height: 18px;
     }
 
 

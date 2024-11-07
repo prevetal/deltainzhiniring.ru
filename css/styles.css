@@ -11914,6 +11914,8 @@ aside .links a.active
     font-weight: 600;
     line-height: 22px;
 
+    align-self: center;
+
     width: 135px;
     max-width: 100%;
     height: 24px;
@@ -11933,6 +11935,7 @@ aside .links a.active
     display: flex;
     align-content: center;
     align-items: center;
+    align-self: center;
     flex-wrap: wrap;
     justify-content: flex-start;
 
@@ -11976,6 +11979,7 @@ aside .links a.active
     display: flex;
     align-content: center;
     align-items: center;
+    align-self: center;
     flex-wrap: wrap;
     justify-content: flex-start;
 
@@ -12019,6 +12023,7 @@ aside .links a.active
     display: flex;
     align-content: center;
     align-items: center;
+    align-self: center;
     flex-wrap: wrap;
     justify-content: flex-start;
 
@@ -12239,6 +12244,16 @@ aside .links a.active
 
 
 
+.product_info .mob_info
+{
+    display: none;
+
+    width: 400px;
+    max-width: 100%;
+}
+
+
+
 .product_info .main_features
 {
     width: 440px;
@@ -12422,6 +12437,8 @@ aside .links a.active
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    margin-bottom: 24px;
 }
 
 
@@ -13366,7 +13383,11 @@ aside .links a.active
     font-size: 20px;
     font-weight: 700;
 
-    display: block;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 280px;
     max-width: 100%;
@@ -13379,6 +13400,15 @@ aside .links a.active
     color: #fff;
     border-radius: 10px;
     background: #c63832;
+}
+
+
+.fixed_product_info .buy_btn .icon
+{
+    display: none;
+
+    width: 16px;
+    height: 16px;
 }
 
 
@@ -13758,6 +13788,7 @@ footer .mob_links
     font-size: 12px;
 
     display: none;
+
     width: calc(100% + 46px);
     margin-right: -13px;
     margin-left: -13px;
