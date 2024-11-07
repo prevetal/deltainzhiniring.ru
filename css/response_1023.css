@@ -54,6 +54,53 @@
 
 
 
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .col
+    {
+        width: 100%;
+    }
+
+
+    .first_section .col + .col
+    {
+        margin-top: 40px;
+    }
+
+
+    .first_section .item .desc
+    {
+        min-height: 0;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .row
+    {
+        margin-bottom: -24px;
+
+        --count: 3;
+    }
+
+
+    .catalog .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+    }
+
+
+    .catalog .category .main .name
+    {
+        font-size: 18px;
+    }
+
+
+
     /*------------
         Brands
     ------------*/

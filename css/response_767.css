@@ -258,6 +258,14 @@
     }
 
 
+    .block_head .title small
+    {
+        font-size: 14px;
+
+        margin-left: 16px;
+    }
+
+
     .block_head .desc > * + *
     {
         margin-top: 16px;
@@ -415,6 +423,123 @@
 
 
 
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .head:after
+    {
+        display: none;
+    }
+
+
+    .first_section .head .icon
+    {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 16px;
+    }
+
+
+    .first_section .head .icon + *
+    {
+        width: 100%;
+        padding-top: 0;
+
+        text-align: center;
+    }
+
+
+    .first_section .items
+    {
+        padding-left: 40px;
+    }
+
+
+    .first_section .item:before
+    {
+        margin-right: 18px;
+    }
+
+
+    .first_section .item:after
+    {
+        bottom: -20px;
+
+        margin-right: 28px;
+    }
+
+
+    .first_section .item + .item
+    {
+        margin-top: 20px;
+    }
+
+
+    .first_section .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .first_section .link a
+    {
+        font-size: 14px;
+
+        margin-top: 20px;
+
+        border-radius: 6px;
+    }
+
+
+    .first_section .link .icon
+    {
+        width: 22px;
+        height: 18px;
+        margin-left: 60px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .row
+    {
+        margin-bottom: -20px;
+        margin-left: -13px;
+
+        --count: 2;
+    }
+
+
+    .catalog .row > *
+    {
+        width: calc(50% - 13px);
+        margin-bottom: 20px;
+        margin-left: 13px;
+    }
+
+
+    .catalog .category .main .name
+    {
+        font-size: 16px;
+    }
+
+
+    .catalog .category .sub
+    {
+        font-size: 14px;
+    }
+
+
+    .catalog .category .sub > * + *,
+    .catalog .category .all_link
+    {
+        margin-top: 16px;
+    }
+
+
+
     /*------------
         Brands
     ------------*/
@@ -455,6 +580,21 @@
     /*----------------
         Advantages
     ----------------*/
+    .advantages .row
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+
+    .advantages .row > *
+    {
+        width: 50%;
+        margin-left: 0;
+    }
+
+
     .advantages .item .icon
     {
         height: 80px;
@@ -2507,6 +2647,14 @@
     }
 
 
+    .stocks .all_link
+    {
+        font-size: 14px;
+
+        margin-top: 24px;
+    }
+
+
 
     /*----------------
         Stock info
@@ -2551,6 +2699,14 @@
     .articles .article .name
     {
         font-size: 16px;
+    }
+
+
+    .articles .all_link
+    {
+        font-size: 14px;
+
+        margin-top: 24px;
     }
 
 

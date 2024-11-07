@@ -318,6 +318,12 @@
     }
 
 
+    .block_head .title small
+    {
+        font-size: 18px;
+    }
+
+
 
     /*----------------
         Typography
@@ -378,6 +384,69 @@
         font-size: 18px;
 
         padding-top: 20px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .col
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .first_section .head .name
+    {
+        font-size: 28px;
+    }
+
+
+    .first_section .item .name
+    {
+        font-size: 22px;
+    }
+
+
+    .first_section .link a
+    {
+        font-size: 18px;
+
+        width: 520px;
+        height: 48px;
+        margin-top: 28px;
+    }
+
+
+    .first_section .link .icon
+    {
+        margin-left: 80px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .category .main .name
+    {
+        font-size: 22px;
+
+        padding-bottom: 9px;
+    }
+
+
+    .catalog .category .sub
+    {
+        font-size: 18px;
+    }
+
+
+    .catalog .category .sub > * + *,
+    .catalog .category .all_link
+    {
+        margin-top: 20px;
     }
 
 
@@ -1763,6 +1832,14 @@
     }
 
 
+    .stocks .all_link
+    {
+        font-size: 18px;
+
+        margin-top: 32px;
+    }
+
+
 
     /*----------------
         Stock info
@@ -1847,6 +1924,14 @@
     .articles .article .bottom
     {
         padding-top: 20px;
+    }
+
+
+    .articles .all_link
+    {
+        font-size: 18px;
+
+        margin-top: 32px;
     }
 
 

@@ -283,6 +283,16 @@
 
 
 
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title small
+    {
+        font-size: 16px;
+    }
+
+
+
     /*------------------
         Form elements
     ------------------*/
@@ -365,6 +375,98 @@
         font-size: 16px;
 
         padding-top: 16px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .col
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .first_section .head .icon
+    {
+        width: 92px;
+        height: 92px;
+
+        border-width: 2px;
+    }
+
+
+    .first_section .head .icon + *
+    {
+        width: calc(100% - 112px);
+        padding-top: 28px;
+    }
+
+
+    .first_section .head .name
+    {
+        font-size: 24px;
+    }
+
+
+    .first_section .items
+    {
+        padding-left: 112px;
+    }
+
+
+    .first_section .item:before
+    {
+        top: 1px;
+
+        margin-right: 52px;
+    }
+
+
+    .first_section .item:after
+    {
+        margin-right: 62px;
+    }
+
+
+    .first_section .item .name
+    {
+        font-size: 20px;
+    }
+
+
+    .first_section .link a
+    {
+        font-size: 16px;
+
+        margin-top: 24px;
+    }
+
+
+    .first_section .link .icon
+    {
+        margin-left: 68px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .category .main .name
+    {
+        font-size: 20px;
+
+        padding-bottom: 10px;
+
+        border-width: 2px;
+    }
+
+
+    .catalog .category .sub
+    {
+        font-size: 16px;
     }
 
 
@@ -2013,6 +2115,14 @@
     }
 
 
+    .stocks .all_link
+    {
+        font-size: 16px;
+
+        margin-top: 28px;
+    }
+
+
 
     /*----------------
         Stock info
@@ -2037,6 +2147,14 @@
     .articles .article .name
     {
         font-size: 18px;
+    }
+
+
+    .articles .all_link
+    {
+        font-size: 16px;
+
+        margin-top: 28px;
     }
 
 

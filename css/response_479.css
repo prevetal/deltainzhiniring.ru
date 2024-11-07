@@ -12,7 +12,7 @@
 
     .cont
     {
-        padding: 0 14px;
+        padding: 0 13px;
     }
 
 
@@ -242,6 +242,12 @@
     }
 
 
+    .block_head .title small
+    {
+        font-size: 12px;
+    }
+
+
 
     /*----------------
         Typography
@@ -293,6 +299,48 @@
 
 
     .text_block .spoler_btn
+    {
+        font-size: 12px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .head .icon
+    {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 12px;
+    }
+
+
+    .first_section .item:before
+    {
+        top: 0;
+    }
+
+
+    .first_section .item .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .category .main .name
+    {
+        font-size: 14px;
+
+        word-wrap: break-word;
+    }
+
+
+    .catalog .category .sub
     {
         font-size: 12px;
     }
@@ -354,20 +402,37 @@
     ----------------*/
     .advantages .row
     {
-        margin-left: 0;
+        width: calc(100% + 26px);
+        margin-right: -13px;
+        margin-left: -13px;
     }
 
 
-    .advantages .row > *
+    .advantages .item
     {
-        width: 100%;
-        margin-left: 0;
+        border: none;
     }
 
 
     .advantages .item .name
     {
-        padding: 14px;
+        font-weight: 400;
+
+        padding: 8px;
+
+        text-transform: none;
+    }
+
+
+    .advantages .item .name br
+    {
+        display: none;
+    }
+
+
+    .advantages .item .desc
+    {
+        font-size: 12px;
     }
 
 
@@ -1923,6 +1988,14 @@
     }
 
 
+    .stocks .all_link
+    {
+        font-size: 12px;
+
+        margin-top: 20px;
+    }
+
+
 
     /*----------------
         Stock info
@@ -1958,6 +2031,14 @@
     .articles .article .link
     {
         margin-left: 0;
+    }
+
+
+    .articles .all_link
+    {
+        font-size: 12px;
+
+        margin-top: 20px;
     }
 
 

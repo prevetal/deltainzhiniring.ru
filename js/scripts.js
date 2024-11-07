@@ -117,15 +117,19 @@ document.addEventListener('DOMContentLoaded', function () {
 					slidesPerView: 'auto'
 				},
 				480: {
-					spaceBetween: 20,
+					spaceBetween: 13,
 					slidesPerView: 2
 				},
 				768: {
-					spaceBetween: 30,
+					spaceBetween: 13,
+					slidesPerView: 3
+				},
+				1024: {
+					spaceBetween: 6,
 					slidesPerView: 3
 				},
 				1280: {
-					spaceBetween: 30,
+					spaceBetween: 6,
 					slidesPerView: 4
 				}
 			},
