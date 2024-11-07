@@ -13753,6 +13753,51 @@ footer .links .items a.active
 
 
 
+footer .mob_links
+{
+    font-size: 12px;
+
+    display: none;
+    width: calc(100% + 46px);
+    margin-right: -13px;
+    margin-left: -13px;
+    padding: 20px 13px;
+
+    background: var(--bg);
+
+    column-gap: 13px;
+    column-count: 2;
+}
+
+
+footer .mob_links > *
+{
+    transform: translateZ(0);
+
+    --webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+
+footer .mob_links > * + *
+{
+    margin-top: 8px;
+}
+
+
+footer .mob_links a
+{
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: var(--text_color);
+}
+
+
+
 footer .copyright
 {
     margin-top: 20px;

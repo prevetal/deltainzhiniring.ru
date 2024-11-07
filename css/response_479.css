@@ -462,7 +462,7 @@
     --------------------*/
     .contacts_block .row
     {
-        margin-bottom: -20px;
+        margin-bottom: -16px;
         margin-left: 0;
     }
 
@@ -470,26 +470,126 @@
     .contacts_block .row > *
     {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
         margin-left: 0;
+    }
+
+
+    .contacts_block .phone,
+    .contacts_block .email,
+    .contacts_block .messengers
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        padding: 11px 7px;
+
+        border: 1px solid #d0d0d0;
+        border-radius: 6px;
     }
 
 
     .contacts_block .label
     {
         line-height: 18px;
+
+        width: 100%;
+    }
+
+
+    .contacts_block .label br
+    {
+        display: none;
     }
 
 
     .contacts_block .val
     {
         font-size: 14px;
+        font-weight: 500;
+
+        margin-top: 0;
+
+        white-space: nowrap;
     }
 
 
     .contacts_block .messengers .val
     {
-        gap: 20px;
+        font-size: 12px;
+
+        flex-wrap: nowrap;
+
+        margin-left: 8px;
+
+        gap: 4px;
+    }
+
+
+    .contacts_block .messengers a
+    {
+        flex-wrap: nowrap;
+    }
+
+
+    .contacts_block .messengers img
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+
+    .contacts_block .work_time .label
+    {
+        font-size: 14px;
+        font-weight: 500;
+
+        margin-bottom: 8px;
+
+        text-align: center;
+    }
+
+
+    .contacts_block .work_time .val
+    {
+        padding: 11px;
+
+        border: 1px solid #d0d0d0;
+        border-radius: 6px;
+    }
+
+
+    .contacts_block .work_time .val > *
+    {
+        width: 248px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .contacts_block .work_time .val > * + *
+    {
+        margin-top: 4px;
+        padding-top: 4px;
+
+        border-top: 1px solid #d0d0d0;
+    }
+
+
+    .contacts_block .work_time .day
+    {
+        margin-left: 24px;
+    }
+
+
+    .contacts_block .work_time .time
+    {
+        width: 104px;
+        max-width: 100%;
+        margin-left: auto;
     }
 
 
@@ -2232,15 +2332,64 @@
     /*------------
         Footer
     ------------*/
-    footer .data .title
+    footer .data
     {
-        font-size: 16px;
+        padding: 24px 0;
     }
 
 
-    footer .requisites .val,
+    footer .data .cont > div:first-child
+    {
+        margin-bottom: 24px;
+    }
+
+
+    footer .data .title
+    {
+        font-size: 16px;
+
+        text-align: center;
+    }
+
+
+    footer .requisites .val
+    {
+        font-size: 14px;
+
+        text-align: center;
+    }
+
+
     footer .links .items a
     {
         font-size: 14px;
+    }
+
+
+    footer .ya_rating
+    {
+        margin: 28px auto 0;
+    }
+
+
+    footer .links,
+    footer .line
+    {
+        display: none;
+    }
+
+
+    footer .mob_links
+    {
+        display: block;
+    }
+
+
+    footer .copyright,
+    footer .privacy_policy_link
+    {
+        font-size: 12px;
+
+        text-align: center;
     }
 }
