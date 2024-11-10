@@ -1441,9 +1441,21 @@
     /*----------------------
         Checkout success
     ----------------------*/
+    .checkout_success .icon
+    {
+        margin-bottom: 36px;
+    }
+
+
     .checkout_success .number
     {
         font-size: 20px;
+    }
+
+
+    .checkout_success .desc
+    {
+        padding: 23px;
     }
 
 
@@ -2535,6 +2547,28 @@
         width: 180px;
         height: 48px;
         margin-left: 24px;
+    }
+
+
+
+    /*-------------------------
+        Product description
+    -------------------------*/
+    .product_description .popular_requests
+    {
+        margin-bottom: 24px !important;
+    }
+
+
+    .product_description .popular_requests .title
+    {
+        font-size: 16px;
+    }
+
+
+    .product_description .popular_requests a
+    {
+        font-size: 14px;
     }
 
 

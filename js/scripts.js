@@ -158,20 +158,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		let options = {
 			loop: true,
-			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
 			spaceBetween: 14,
 			slidesPerView: 'auto',
-			centeredSlides: true,
-			speed: 6000,
-			autoplay: {
-				delay: 1,
-				disableOnInteraction: false
-			},
-			allowTouchMove: false,
-			disableOnInteraction: true
+			speed: 500,
+			// centeredSlides: true,
+			// speed: 6000,
+			// autoplay: {
+			// 	delay: 1,
+			// 	disableOnInteraction: false
+			// },
+			// allowTouchMove: false
 		}
 
 		clientsSliders.push(new Swiper('.clients_s' + i, options))
@@ -529,10 +528,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	$('.product .buy_btn').click(function(e) {
 		e.preventDefault()
 
-		let product = $(this).closest('.product')
+		// let product = $(this).closest('.product')
 
-		$(this).toggleClass('active')
-		product.find('.amount').toggleClass('show')
+		// $(this).toggleClass('active')
+		// product.find('.amount').toggleClass('show')
 
 		// Open modal
 		Fancybox.show([{
@@ -742,12 +741,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		to: 9999999,
 		step: 1,
 		onChange: data => {
-			$('.filter .price_range input.from').val(data.from.toLocaleString())
-			$('.filter .price_range input.to').val(data.to.toLocaleString())
+			$('.filter .price_range input.from').val(data.from.toLocaleString('ru-RU'))
+			$('.filter .price_range input.to').val(data.to.toLocaleString('ru-RU'))
 		},
 		onUpdate: data => {
-			$('.filter .price_range input.from').val(data.from.toLocaleString())
-			$('.filter .price_range input.to').val(data.to.toLocaleString())
+			$('.filter .price_range input.from').val(data.from.toLocaleString('ru-RU'))
+			$('.filter .price_range input.to').val(data.to.toLocaleString('ru-RU'))
 		}
 	}).data('ionRangeSlider')
 

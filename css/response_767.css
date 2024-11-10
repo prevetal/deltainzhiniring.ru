@@ -3217,6 +3217,28 @@
 
 
 
+    /*-------------------------
+        Product description
+    -------------------------*/
+    .product_description .popular_requests
+    {
+        margin-bottom: 20px !important;
+    }
+
+
+    .product_description .popular_requests .row
+    {
+        gap: 8px;
+    }
+
+
+    .product_description .popular_requests a
+    {
+        font-size: 12px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
