@@ -1747,6 +1747,13 @@ header .menu .swiper-button-prev
 }
 
 
+header .menu .swiper-button-next.swiper-button-disabled,
+header .menu .swiper-button-prev.swiper-button-disabled
+{
+    display: none;
+}
+
+
 header .menu .swiper-button-prev
 {
     left: 0;
@@ -2462,7 +2469,7 @@ aside .filter .spoler_btn.active span
 
 aside .filter .spoler_btn.active span + span
 {
-    display: none;
+    display: inline;
 }
 
 

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	if (menuSlider) {
 		new Swiper('header .menu .swiper', {
-			loop: true,
+			loop: false,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
