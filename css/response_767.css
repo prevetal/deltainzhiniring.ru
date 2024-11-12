@@ -19,6 +19,13 @@
     }
 
 
+    .irs--flat .irs-min,
+    .irs--flat .irs-max
+    {
+        top: 18px;
+    }
+
+
 
     /*--------------
         Fancybox
@@ -1547,7 +1554,15 @@
 
     .cart_info .process
     {
+        display: none;
+
         margin-top: 32px;
+    }
+
+
+    .cart_info .process.mob
+    {
+        display: block;
     }
 
 
@@ -1620,6 +1635,9 @@
 
     .cart_info .cart_total
     {
+        position: relative;
+        top: 0;
+
         margin-top: 32px;
         padding: 11px;
 
@@ -2178,19 +2196,29 @@
     -----------*/
     .certs .swiper
     {
-        padding: 0 32px;
+        padding: 0;
+    }
+
+
+    .certs .row
+    {
+        margin-bottom: -13px;
+        margin-left: -13px;
+        padding: 0;
     }
 
 
     .certs .row > *
     {
-        width: calc(50% - 24px);
+        width: calc(33.333% - 13px);
+        margin-bottom: 13px;
+        margin-left: 13px;
     }
 
 
     .certs .row .item .thumb
     {
-        height: 240px;
+        height: 140px;
     }
 
 
@@ -2912,9 +2940,64 @@
     }
 
 
+    .reviews .swiper
+    {
+        padding: 0;
+    }
+
+
+    .reviews .swiper-button-next,
+    .reviews .swiper-button-prev
+    {
+        top: auto;
+        bottom: 100%;
+
+        width: 24px;
+        height: 24px;
+        margin: 0 0 36px;
+    }
+
+
+    .reviews .swiper-button-prev
+    {
+        right: 40px;
+        left: auto;
+    }
+
+    .reviews .swiper-button-next
+    {
+        right: 0;
+    }
+
 
     .reviews .list .review .pluses,
     .reviews .list .review .minuses
+    {
+        width: 100%;
+    }
+
+
+
+    .reviews .add_review .form .top .line:nth-child(1),
+    .reviews .add_review .form .top .line:nth-child(2)
+    {
+        width: calc(50% - 6px);
+    }
+
+
+    .reviews .add_review .form .rating
+    {
+        padding: 0 22px;
+    }
+
+
+    .reviews .add_review .form textarea
+    {
+        height: 104px;
+    }
+
+
+    .reviews .add_review .form .submit_btn
     {
         width: 100%;
     }
@@ -3235,6 +3318,26 @@
     .product_description .popular_requests a
     {
         font-size: 12px;
+    }
+
+
+
+    /*--------------------------
+        Mob popular requests
+    --------------------------*/
+    .mob_popular_requests
+    {
+        display: block;
+    }
+
+
+
+    /*-----------------------
+        Mob. aside .links
+    -----------------------*/
+    .mob_aside_links
+    {
+        display: block;
     }
 
 

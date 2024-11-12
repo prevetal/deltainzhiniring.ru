@@ -6,7 +6,7 @@
     :root
     {
         --font_size: 12px;
-        --font_size_title: 24px;
+        --font_size_title: 20px;
     }
 
 
@@ -19,8 +19,8 @@
     .swiper-button-next .icon,
     .swiper-button-prev .icon
     {
-        width: 24px;
-        height: 20px;
+        width: 20px;
+        height: 16px;
     }
 
 
@@ -166,31 +166,42 @@
     }
 
 
+    .form .method_communication .row
+    {
+        margin-left: -20px;
+    }
+
+
     .form .method_communication .row > *
     {
-        width: 100%;
+        width: calc(33.333% - 20px);
+        margin-left: 20px;
     }
 
 
     .form .method_communication label div
     {
-        justify-content: flex-start;
+        display: none;
+    }
 
-        height: 44px;
-        padding: 7px 11px;
+
+    .form .method_communication label div.mob
+    {
+        display: block;
+
+        height: auto;
+
+        color: #2e2a27;
+        border-color: #dfdfde;
     }
 
 
     .form .method_communication label .icon
     {
-        width: 22px;
-        height: 22px;
-    }
-
-
-    .form .method_communication label span
-    {
-        max-width: calc(100% - 30px);
+        width: 100%;
+        height: 24px;
+        margin-right: 0;
+        margin-bottom: 8px;
     }
 
 
@@ -223,6 +234,20 @@
     }
 
 
+    .block_head .title small
+    {
+        display: block;
+
+        width: 100%;
+        margin-top: 4px;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
     .text_block h2
     {
         font-size: 16px;
@@ -370,9 +395,42 @@
     }
 
 
+    .brands .logos
+    {
+        margin-bottom: -13px;
+        margin-left: -13px;
+    }
+
+
     .brands .logos > *
     {
-        width: calc(33.333% - 20px);
+        width: calc(33.333% - 13px);
+        margin-bottom: 13px;
+        margin-left: 13px;
+    }
+
+
+    .brands .swiper-button-next,
+    .brands .swiper-button-prev
+    {
+        top: auto;
+        bottom: 100%;
+
+        width: 24px;
+        height: 24px;
+        margin: 0 0 24px;
+    }
+
+
+    .brands .swiper-button-prev
+    {
+        right: 40px;
+        left: auto;
+    }
+
+    .brands .swiper-button-next
+    {
+        right: 0;
     }
 
 
@@ -690,8 +748,6 @@
     {
         visibility: visible;
 
-        width: 180px;
-
         pointer-events: auto;
 
         opacity: 1;
@@ -701,7 +757,24 @@
     .products .swiper-button-next,
     .products .swiper-button-prev
     {
-        display: none;
+        top: auto;
+        bottom: 100%;
+
+        width: 24px;
+        height: 24px;
+        margin: 0 0 24px;
+    }
+
+
+    .products .swiper-button-prev
+    {
+        right: 40px;
+        left: auto;
+    }
+
+    .products .swiper-button-next
+    {
+        right: 0;
     }
 
 
@@ -1524,7 +1597,7 @@
     ------------------*/
     .credit_order .form .range + .range
     {
-        margin-top: 20px;
+        margin-top: 28px;
     }
 
 
@@ -1613,9 +1686,10 @@
 
     .stats .item
     {
-        font-size: 16px;
+        font-size: 14px;
 
-        min-height: 100px;
+        min-height: 60px;
+        padding: 6px;
     }
 
 
@@ -1698,30 +1772,9 @@
     /*-----------
         Certs
     -----------*/
-    .certs .row
-    {
-        margin-bottom: -16px;
-        margin-left: -16px;
-    }
-
-
-    .certs .row > *
-    {
-        width: calc(50% - 16px);
-        margin-bottom: 16px;
-        margin-left: 16px;
-    }
-
-
     .certs .row .item .thumb
     {
-        height: 176px;
-    }
-
-
-    .certs .item .thumb
-    {
-        height: 176px;
+        height: 104px;
     }
 
 
@@ -2056,6 +2109,8 @@
     .compare_info .block_title
     {
         font-size: 14px;
+
+        padding-right: 80px;
     }
 
 
@@ -2260,6 +2315,13 @@
     }
 
 
+    .reviews .swiper-button-next,
+    .reviews .swiper-button-prev
+    {
+        margin-bottom: 24px;
+    }
+
+
     .reviews .review .author
     {
         font-size: 12px;
@@ -2420,6 +2482,54 @@
     {
         font-size: 12px;
         line-height: 18px;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients .item
+    {
+        height: 68px;
+        padding: 6px 13px;
+    }
+
+
+
+    /*----------------
+        Order form
+    ----------------*/
+    .order_form .form
+    {
+        margin-top: 20px;
+        padding: 0;
+
+        border: none;
+        border-radius: 0;
+    }
+
+
+    .order_form .form .mob_title
+    {
+        display: block;
+    }
+
+
+    .order_form .form .columns
+    {
+        --form_columns_offset: 13px;
+    }
+
+    .order_form .form .columns > *.width1of3
+    {
+        width: calc(50% - var(--form_columns_offset));
+    }
+
+
+    .order_form .form .columns > *.submit
+    {
+        width: calc(100% - var(--form_columns_offset));
     }
 
 

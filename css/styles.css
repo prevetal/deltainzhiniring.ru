@@ -3318,6 +3318,14 @@ aside .links a.active
 }
 
 
+.form .method_communication label div.mob
+{
+    display: none;
+
+    text-align: center;
+}
+
+
 .form .method_communication label .icon
 {
     display: block;
@@ -3342,7 +3350,8 @@ aside .links a.active
 }
 
 
-.form .method_communication input:checked + div
+.form .method_communication input:checked ~ div,
+.form .method_communication input:checked ~ div.mob
 {
     color: #fff;
     border-color: #236d74;
@@ -4954,6 +4963,19 @@ aside .links a.active
 
     border: 2px solid #ececec;
     border-radius: 20px;
+}
+
+
+.order_form .form .mob_title
+{
+    font-size: 12px;
+    font-weight: 600;
+
+    display: none;
+
+    margin-bottom: 8px;
+
+    color: #16646b;
 }
 
 
@@ -7110,11 +7132,13 @@ aside .links a.active
 .clients .swiper
 {
     overflow: visible !important;
+
+    padding: 0 13px;
 }
 
 
-.clients .swiper:before,
-.clients .swiper:after
+.clients .swiper-initialized:before,
+.clients .swiper-initialized:after
 {
     position: absolute;
     z-index: 5;
@@ -7124,15 +7148,17 @@ aside .links a.active
     display: block;
 
     width: 200px;
+    max-width: 33.333%;
     height: 100%;
 
     content: '';
+    pointer-events: none;
 
     background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 }
 
 
-.clients .swiper:after
+.clients .swiper-initialized:after
 {
     right: 0;
     left: auto;
@@ -7150,6 +7176,21 @@ aside .links a.active
 .clients .swiper-slide
 {
     width: 170px;
+}
+
+
+.clients .row
+{
+    margin-bottom: -13px;
+    margin-left: -13px;
+}
+
+
+.clients .row > *
+{
+    width: calc(33.333% - 13px);
+    margin-bottom: 13px;
+    margin-left: 13px;
 }
 
 
@@ -7208,12 +7249,17 @@ aside .links a.active
 }
 
 
-.certs .swiper-horizontal > .swiper-pagination-bullets,
-.certs .swiper-pagination-bullets.swiper-pagination-horizontal,
-.certs .swiper-pagination-custom,
-.certs .swiper-pagination-fraction
+.certs .swiper-button-next,
+.certs .swiper-button-prev
 {
     display: none;
+}
+
+
+.certs .swiper-initialized .swiper-button-next,
+.certs .swiper-initialized .swiper-button-prev
+{
+    display: flex;
 }
 
 
@@ -10243,6 +10289,12 @@ aside .links a.active
 }
 
 
+.cart_info .process.mob
+{
+    display: none;
+}
+
+
 .cart_info .process .title
 {
     font-size: 24px;
@@ -11083,6 +11135,10 @@ aside .links a.active
     align-self: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    margin-left: 0;
+
+    color: var(--text_color);
 }
 
 
@@ -11484,6 +11540,35 @@ aside .links a.active
 .reviews .review .link a:hover
 {
     color: #38a1ab;
+}
+
+
+.reviews .swiper
+{
+    overflow: visible !important;
+}
+
+
+.reviews .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.reviews .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
 }
 
 
@@ -12870,9 +12955,17 @@ aside .links a.active
     margin-top: 28px;
     padding-bottom: 2px;
 
+    transition: background .2s linear;
+
     color: #fff;
     border-radius: 10px;
-    background-color: rgb(56, 161, 171);
+    background: rgb(56, 161, 171);
+}
+
+
+.product_info .delivery .calc_btn:hover
+{
+    background: #236d73;
 }
 
 
@@ -13748,6 +13841,206 @@ aside .links a.active
 .product_description .popular_requests a:hover
 {
     background: #38a1ab;
+}
+
+
+
+/*---------------------------
+    Mob. popular requests
+---------------------------*/
+.mob_popular_requests
+{
+    display: none;
+
+    margin-bottom: 20px;
+}
+
+
+.mob_popular_requests .title
+{
+    font-size: 14px;
+    font-weight: 600;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    color: #4a4845;
+}
+
+
+.mob_popular_requests .title .icon
+{
+    display: block;
+
+    width: 12px;
+    height: 6px;
+    margin-left: auto;
+
+    transition: transform .2s linear;
+    transform: rotate(180deg);
+
+    color: #18656c;
+}
+
+
+.mob_popular_requests .title.active .icon
+{
+    transform: rotate(0deg);
+}
+
+
+.mob_popular_requests .data
+{
+    display: none;
+
+    padding-top: 16px;
+}
+
+
+.mob_popular_requests .row
+{
+    overflow: auto;
+
+    width: calc(100% + 26px);
+    margin: 0 -13px;
+    padding: 0 13px;
+
+    white-space: nowrap;
+
+    scroll-padding: 0 13px;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: transparent transparent !important;
+    scrollbar-width: thin !important;
+}
+
+
+.mob_popular_requests .row::-webkit-scrollbar
+{
+    display: none !important;
+
+    width: 0 !important;
+    height: 0 !important;
+
+    background-color: transparent !important;
+}
+
+
+.mob_popular_requests .row::-webkit-scrollbar-thumb
+{
+    background-color: transparent !important;
+}
+
+
+.mob_popular_requests .row > *
+{
+    display: inline-block;
+
+    vertical-align: top;
+
+    scroll-snap-align: start;
+}
+
+
+.mob_popular_requests a
+{
+    font-size: 12px;
+
+    display: inline-block;
+
+    padding: 14px;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: #236d73;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+
+.mob_popular_requests .row > * + *
+{
+    margin-left: 4px;
+}
+
+
+
+/*-----------------------
+    Mob. aside .links
+-----------------------*/
+.mob_aside_links
+{
+    display: none;
+}
+
+
+.mob_aside_links .title
+{
+    font-size: 14px;
+    font-weight: 600;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    color: #4a4845;
+}
+
+
+.mob_aside_links .title .icon
+{
+    display: block;
+
+    width: 12px;
+    height: 6px;
+    margin-left: auto;
+
+    transition: transform .2s linear;
+    transform: rotate(180deg);
+
+    color: #18656c;
+}
+
+
+.mob_aside_links .title.active .icon
+{
+    transform: rotate(0deg);
+}
+
+
+.mob_aside_links .data
+{
+    display: none;
+
+    padding-top: 16px;
+}
+
+
+.mob_aside_links .data > * + *
+{
+    margin-top: 16px;
+}
+
+
+.mob_aside_links .data a
+{
+    font-size: 12px;
+
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: #2e2a27;
 }
 
 

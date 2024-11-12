@@ -2268,6 +2268,12 @@
     }
 
 
+    .reviews .swiper
+    {
+        padding: 0 40px;
+    }
+
+
     .reviews .review .author
     {
         font-size: 16px;

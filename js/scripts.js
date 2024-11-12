@@ -114,10 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			breakpoints: {
 				0: {
 					spaceBetween: 13,
-					slidesPerView: 'auto'
-				},
-				480: {
-					spaceBetween: 13,
 					slidesPerView: 2
 				},
 				768: {
@@ -146,86 +142,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		productsSliders.push(new Swiper('.products_s' + i, options))
-	})
-
-
-	// Clients slider
-	const clientsSliders = [],
-		clients = document.querySelectorAll('.clients .swiper')
-
-	clients.forEach((el, i) => {
-		el.classList.add('clients_s' + i)
-
-		let options = {
-			loop: true,
-			watchSlidesProgress: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			spaceBetween: 14,
-			slidesPerView: 'auto',
-			speed: 500,
-			// centeredSlides: true,
-			// speed: 6000,
-			// autoplay: {
-			// 	delay: 1,
-			// 	disableOnInteraction: false
-			// },
-			// allowTouchMove: false
-		}
-
-		clientsSliders.push(new Swiper('.clients_s' + i, options))
-	})
-
-
-	// Certs slider
-	const certsSliders = [],
-		certs = document.querySelectorAll('.certs .swiper')
-
-	certs.forEach((el, i) => {
-		el.classList.add('certs_s' + i)
-
-		let options = {
-			loop: true,
-			speed: 500,
-			watchSlidesProgress: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
-			lazy: true,
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'bullets',
-				clickable: true,
-				bulletActiveClass: 'active'
-			},
-			breakpoints: {
-				0: {
-					spaceBetween: 13,
-					slidesPerView: 2
-				},
-				480: {
-					spaceBetween: 20,
-					slidesPerView: 2
-				},
-				768: {
-					spaceBetween: 24,
-					slidesPerView: 3
-				},
-				1024: {
-					spaceBetween: 24,
-					slidesPerView: 4
-				},
-				1280: {
-					spaceBetween: 36,
-					slidesPerView: 6
-				}
-			}
-		}
-
-		certsSliders.push(new Swiper('.certs_s' + i, options))
 	})
 
 
@@ -324,9 +240,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			spaceBetween: 13,
 			breakpoints: {
 				0: {
-					slidesPerView: 2
-				},
-				480: {
 					slidesPerView: 3
 				},
 				768: {
@@ -866,6 +779,30 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	const reviewsSliders = [],
+		reviews = document.querySelectorAll('.reviews .swiper')
+
+	reviews.forEach((el, i) => {
+		el.classList.add('reviews_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			spaceBetween: 24,
+			slidesPerView: 1
+		}
+
+		reviewsSliders.push(new Swiper('.reviews_s' + i, options))
+	})
+
+
 	// Aligning elements in the grid
 	document.querySelectorAll('.catalog .row').forEach(el => {
 		let styles = getComputedStyle(el)
@@ -951,6 +888,29 @@ document.addEventListener('DOMContentLoaded', function () {
 		let parent = $(this).closest('.sub')
 
 		parent.removeClass('show')
+	})
+
+
+	// Clients
+	initClientsSliders()
+
+	// Certs
+	initCertsSliders()
+
+
+	// Mob. popular requests
+	$('.mob_popular_requests .title').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
+	})
+
+
+	// Mob. aside links
+	$('.mob_aside_links .title').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
 	})
 })
 
@@ -1050,6 +1010,13 @@ window.addEventListener('resize', function () {
 		setHeight(contactsLabels)
 
 
+		// Clients
+		initClientsSliders()
+
+		// Certs
+		initCertsSliders()
+
+
 		// Mob. version
 		if (!fakeResize) {
 			fakeResize = true
@@ -1114,4 +1081,110 @@ function productsHeight(context, step) {
 		finish = finish + step
 		i++
 	})
+}
+
+
+
+// Clients
+clientsSliders = []
+
+function initClientsSliders() {
+	if ($(window).width() > 767) {
+		if ($('.clients .row').length) {
+			$('.clients .row > *').addClass('swiper-slide')
+			$('.clients .row').addClass('swiper-wrapper').removeClass('row')
+
+			$('.clients .swiper').each(function (i) {
+				$(this).addClass('clients_s' + i)
+
+				let options = {
+					loop: true,
+					watchSlidesProgress: true,
+					slideActiveClass: 'active',
+					slideVisibleClass: 'visible',
+					spaceBetween: 13,
+					slidesPerView: 'auto',
+					speed: 500,
+					// centeredSlides: true,
+					// speed: 6000,
+					// autoplay: {
+					// 	delay: 1,
+					// 	disableOnInteraction: false
+					// },
+					// allowTouchMove: false
+				}
+
+				clientsSliders.push(new Swiper('.clients_s' + i, options))
+			})
+		}
+	} else {
+		clientsSliders.forEach(element => element.destroy(true, true))
+
+		clientsSliders = []
+
+		$('.clients .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
+		$('.clients .row > *').removeClass('swiper-slide')
+	}
+}
+
+
+
+// Certs
+certsSliders = []
+
+function initCertsSliders() {
+	if ($(window).width() > 767) {
+		if ($('.certs .row').length) {
+			$('.certs .row > *').addClass('swiper-slide')
+			$('.certs .row').addClass('swiper-wrapper').removeClass('row')
+
+			$('.certs .swiper').each(function (i) {
+				$(this).addClass('certs_s' + i)
+
+				let options = {
+					loop: true,
+					speed: 500,
+					watchSlidesProgress: true,
+					slideActiveClass: 'active',
+					slideVisibleClass: 'visible',
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev'
+					},
+					lazy: true,
+					breakpoints: {
+						0: {
+							spaceBetween: 13,
+							slidesPerView: 2
+						},
+						480: {
+							spaceBetween: 20,
+							slidesPerView: 2
+						},
+						768: {
+							spaceBetween: 24,
+							slidesPerView: 3
+						},
+						1024: {
+							spaceBetween: 24,
+							slidesPerView: 4
+						},
+						1280: {
+							spaceBetween: 36,
+							slidesPerView: 6
+						}
+					}
+				}
+
+				certsSliders.push(new Swiper('.certs_s' + i, options))
+			})
+		}
+	} else {
+		certsSliders.forEach(element => element.destroy(true, true))
+
+		certsSliders = []
+
+		$('.certs .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
+		$('.certs .row > *').removeClass('swiper-slide')
+	}
 }
