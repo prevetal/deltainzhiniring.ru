@@ -858,6 +858,32 @@
     }
 
 
+    .products .product .btns:hover .buy_btn
+    {
+        width: calc(35% - 2px);
+    }
+
+
+    .products .product .amount
+    {
+        width: calc(65% - 2px);
+    }
+
+
+    .products .product .amount .btn
+    {
+        width: 40px;
+    }
+
+
+    .products .product .amount .input
+    {
+        font-size: 18px;
+
+        padding: 0 32px;
+    }
+
+
 
     /*--------------------
         Guarantee info
@@ -2312,13 +2338,6 @@
         font-size: 12px;
 
         margin-left: 28px;
-    }
-
-
-    .reviews .swiper-button-next,
-    .reviews .swiper-button-prev
-    {
-        margin-bottom: 24px;
     }
 
 

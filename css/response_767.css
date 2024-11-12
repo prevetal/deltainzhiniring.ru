@@ -862,6 +862,12 @@
     }
 
 
+    .products .product .amount .input
+    {
+        font-size: 20px;
+    }
+
+
 
     /*------------
         Notice
@@ -2949,12 +2955,12 @@
     .reviews .swiper-button-next,
     .reviews .swiper-button-prev
     {
-        top: auto;
-        bottom: 100%;
+        top: -4px;
+        bottom: auto;
 
         width: 24px;
         height: 24px;
-        margin: 0 0 36px;
+        margin: 0;
     }
 
 
