@@ -1885,6 +1885,43 @@
 
 
 
+    /*---------------------------
+        Cooperation what need
+    ---------------------------*/
+    .cooperation_what_need .data
+    {
+        width: calc(100% - 360px);
+    }
+
+
+    .cooperation_what_need .item .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .cooperation_what_need .item .name
+    {
+        font-size: 20px;
+
+        width: calc(100% - 56px);
+    }
+
+
+    .cooperation_what_need .item .desc
+    {
+        font-size: 16px;
+    }
+
+
+    .cooperation_what_need .img
+    {
+        width: 320px;
+    }
+
+
+
     /*---------------------
         Categories wall
     ---------------------*/

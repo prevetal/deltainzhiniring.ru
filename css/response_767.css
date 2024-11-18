@@ -1018,21 +1018,6 @@
     /*----------------
         Info block
     ----------------*/
-    .info_block .section .title
-    {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-
-    .info_block .section .title span
-    {
-        padding-right: 16px;
-        padding-left: 16px;
-    }
-
-
-
     .info_block .bottom .title
     {
         font-size: 14px;
@@ -2381,13 +2366,6 @@
     }
 
 
-    .cooperation_what_need .notice .desc
-    {
-        max-width: 100%;
-        margin-left: 0;
-    }
-
-
 
     /*---------------------
         Categories wall
@@ -2459,6 +2437,47 @@
     {
         font-size: 18px;
         line-height: 24px;
+    }
+
+
+
+    /*---------------------------
+        Cooperation what need
+    ---------------------------*/
+    .cooperation_what_need .data .row
+    {
+        margin-left: 0;
+    }
+
+
+    .cooperation_what_need .data .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .cooperation_what_need .item .icon
+    {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .cooperation_what_need .item .name
+    {
+        font-size: 18px;
+
+        width: calc(100% - 51px);
+    }
+
+
+    .cooperation_what_need .item .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 12px;
     }
 
 

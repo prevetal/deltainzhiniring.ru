@@ -1502,6 +1502,34 @@
 
 
 
+    /*---------------------------
+        Cooperation what need
+    ---------------------------*/
+    .cooperation_what_need .data
+    {
+        width: calc(100% - 440px);
+    }
+
+
+    .cooperation_what_need .item .name
+    {
+        font-size: 22px;
+    }
+
+
+    .cooperation_what_need .item .desc
+    {
+        font-size: 18px;
+    }
+
+
+    .cooperation_what_need .img
+    {
+        width: 380px;
+    }
+
+
+
     /*---------------------
         Categories wall
     ---------------------*/

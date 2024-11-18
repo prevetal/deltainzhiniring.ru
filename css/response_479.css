@@ -1022,13 +1022,6 @@
     /*----------------
         Info block
     ----------------*/
-    .info_block .section .title
-    {
-        font-size: 17px;
-        line-height: 27px;
-    }
-
-
     .info_block .text_block
     {
         line-height: 20px;
@@ -1932,6 +1925,34 @@
     .cooperation_head .data .title
     {
         font-size: 20px;
+    }
+
+
+
+    /*---------------------------
+        Cooperation what need
+    ---------------------------*/
+    .cooperation_what_need .item .icon
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .cooperation_what_need .item .name
+    {
+        font-size: 16px;
+
+        width: calc(100% - 46px);
+    }
+
+
+    .cooperation_what_need .item .desc
+    {
+        font-size: 12px;
+        line-height: 18px;
+
+        margin-top: 8px;
     }
 
 

@@ -6961,31 +6961,7 @@ aside .links a.active
 ----------------*/
 .info_block .section + .section
 {
-    margin-top: 24px;
-}
-
-
-.info_block .section .title
-{
-    font-size: var(--font_size_title);
-    font-weight: 600;
-    line-height: 39px;
-
-    margin-bottom: 16px;
-
-    color: #fff;
-}
-
-
-.info_block .section .title span
-{
-    display: inline-block;
-
-    padding: 2px 22px 4px;
-
-    vertical-align: top;
-
-    background: #38a1ab;
+    margin-top: 60px;
 }
 
 
@@ -8939,22 +8915,95 @@ aside .links a.active
 /*---------------------------
     Cooperation what need
 ---------------------------*/
-.cooperation_what_need .notice
+.cooperation_what_need .block_head
 {
-    margin-top: 30px;
+    width: 100%;
 }
 
 
-.cooperation_what_need .notice .icon
+.cooperation_what_need .data
 {
-    margin-right: 0;
+    align-self: center;
+
+    width: calc(100% - 495px);
 }
 
 
-.cooperation_what_need .notice .desc
+.cooperation_what_need .data .row
 {
-    max-width: calc(100% - 110px);
-    margin-left: 34px;
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -20px;
+    margin-left: -40px;
+}
+
+
+.cooperation_what_need .data .row > *
+{
+    width: calc(50% - 40px);
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+
+.cooperation_what_need .item
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.cooperation_what_need .item .icon
+{
+    display: block;
+
+    width: 48px;
+    height: 48px;
+
+    color: #38a1ab;
+}
+
+
+.cooperation_what_need .item .name
+{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+
+    align-self: center;
+
+    width: calc(100% - 68px);
+
+    color: #236d73;
+}
+
+
+.cooperation_what_need .item .desc
+{
+    font-size: 20px;
+    line-height: 24px;
+
+    width: 100%;
+    margin-top: 16px;
+
+    text-align: justify;
+
+    color: #686868;
+}
+
+
+.cooperation_what_need .img
+{
+    display: block;
+    align-self: center;
+
+    width: 409px;
+    max-width: 100%;
+    margin-left: auto;
 }
 
 
